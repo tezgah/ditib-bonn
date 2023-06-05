@@ -1,0 +1,1745 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>DiTiB Yazılım Kampı</title>
+        <meta name="robots" content="noindex" />
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">Takdim</a></li><li class="chapter-item expanded affix "><li class="part-title">Dersler</li><li class="chapter-item expanded "><a href="chapter-1/index.html"><strong aria-hidden="true">1.</strong> Ders 1</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="chapter-1/notes.html"><strong aria-hidden="true">1.1.</strong> Ders Notları</a></li><li class="chapter-item expanded "><a href="chapter-1/homework.html"><strong aria-hidden="true">1.2.</strong> Ev Ödevi</a></li><li class="chapter-item expanded "><a href="chapter-1/resources.html"><strong aria-hidden="true">1.3.</strong> Kaynaklar</a></li></ol></li><li class="chapter-item expanded "><a href="chapter-2/index.html"><strong aria-hidden="true">2.</strong> Ders 2</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="chapter-2/notes.html"><strong aria-hidden="true">2.1.</strong> Ders Notları</a></li><li class="chapter-item expanded "><a href="chapter-2/homework.html"><strong aria-hidden="true">2.2.</strong> Ev Ödevi</a></li></ol></li><li class="chapter-item expanded "><a href="chapter-3/index.html"><strong aria-hidden="true">3.</strong> Ders 3</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="chapter-3/notes.html"><strong aria-hidden="true">3.1.</strong> Ders Notları</a></li><li class="chapter-item expanded "><a href="chapter-3/homework.html"><strong aria-hidden="true">3.2.</strong> Ev Ödevi</a></li></ol></li><li class="chapter-item expanded "><a href="chapter-4/index.html"><strong aria-hidden="true">4.</strong> Ders 4</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="chapter-4/notes.html"><strong aria-hidden="true">4.1.</strong> Ders Notları</a></li><li class="chapter-item expanded "><a href="chapter-4/homework.html"><strong aria-hidden="true">4.2.</strong> Ev Ödevi</a></li></ol></li><li class="chapter-item expanded "><a href="chapter-5/index.html"><strong aria-hidden="true">5.</strong> Ders 5</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="chapter-5/notes.html"><strong aria-hidden="true">5.1.</strong> Ders Notları</a></li><li class="chapter-item expanded "><a href="chapter-5/homework.html"><strong aria-hidden="true">5.2.</strong> Ev Ödevi</a></li></ol></li><li class="chapter-item expanded "><a href="chapter-6/index.html"><strong aria-hidden="true">6.</strong> Ders 6</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="chapter-6/notes.html"><strong aria-hidden="true">6.1.</strong> Ders Notları</a></li><li class="chapter-item expanded "><a href="chapter-6/homework.html"><strong aria-hidden="true">6.2.</strong> Ev Ödevi</a></li></ol></li><li class="chapter-item expanded "><a href="chapter-7/index.html"><strong aria-hidden="true">7.</strong> Ders 7</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="chapter-7/notes.html"><strong aria-hidden="true">7.1.</strong> Ders Notları</a></li><li class="chapter-item expanded "><a href="chapter-7/homework.html"><strong aria-hidden="true">7.2.</strong> Ev Ödevi</a></li></ol></li><li class="chapter-item expanded "><a href="chapter-8/index.html"><strong aria-hidden="true">8.</strong> Ders 8</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="chapter-8/notes.html"><strong aria-hidden="true">8.1.</strong> Ders Notları</a></li><li class="chapter-item expanded "><a href="chapter-8/homework.html"><strong aria-hidden="true">8.2.</strong> Ev Ödevi</a></li></ol></li><li class="chapter-item expanded "><a href="chapter-9/index.html"><strong aria-hidden="true">9.</strong> Ders 9</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="chapter-9/notes.html"><strong aria-hidden="true">9.1.</strong> Ders Notları</a></li><li class="chapter-item expanded "><a href="chapter-9/homework.html"><strong aria-hidden="true">9.2.</strong> Ev Ödevi</a></li></ol></li><li class="chapter-item expanded "><a href="chapter-10/index.html"><strong aria-hidden="true">10.</strong> Ders 10</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="chapter-10/notes.html"><strong aria-hidden="true">10.1.</strong> Ders Notları</a></li><li class="chapter-item expanded "><a href="chapter-10/homework.html"><strong aria-hidden="true">10.2.</strong> Ev Ödevi</a></li></ol></li><li class="chapter-item expanded "><a href="chapter-11/index.html"><strong aria-hidden="true">11.</strong> Ders 11</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="chapter-11/notes.html"><strong aria-hidden="true">11.1.</strong> Ders Notları</a></li><li class="chapter-item expanded "><a href="chapter-11/homework.html"><strong aria-hidden="true">11.2.</strong> Ev Ödevi</a></li></ol></li><li class="chapter-item expanded "><a href="chapter-12/index.html"><strong aria-hidden="true">12.</strong> Ders 12</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="chapter-12/notes.html"><strong aria-hidden="true">12.1.</strong> Ders Notları</a></li><li class="chapter-item expanded "><a href="chapter-12/homework.html"><strong aria-hidden="true">12.2.</strong> Ev Ödevi</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="misc/documentation.html">Dokümantasyon</a></li><li class="chapter-item expanded affix "><a href="misc/contact.html">İletişim</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">DiTiB Yazılım Kampı</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="takdim"><a class="header" href="#takdim">Takdim</a></h1>
+<p>Merhaba,</p>
+<p>DiTiB Bonn bünyesinde sunduğumuz <code>Yazılım Atölyesi</code> sayfasını görüntülemektesiniz. Bu sayfada eğitim içeriği ve kullandığımız materyaller hakkında bilgiler bulabilirsiniz.</p>
+<h2 id="yazılım-atölyesi-nedir"><a class="header" href="#yazılım-atölyesi-nedir">Yazılım Atölyesi nedir?</a></h2>
+<p>Yazılım Atölyesi genel programlama tekniklerini öğretir ve gençlerin problem çözme kabiliyetlerini geliştirebilecekleri bir müfredat sunar. Öğrenciler <code>Tasarım Reçetesi</code> olarak isimlendrilen bir yöntem kullanarak öncelikle problemi anlamaya yönlendirilir. Problem anlaşıldıktan sonra uygun bir yöntem kullanılarak çözüm üretilir.</p>
+<p>Derslerimiz programlama öğrenmek isteyen herkese açık ve ücretsizdir. 12-20 yaş arası gençleri özellikle bekliyoruz. Derslere katılmak için herhangibir programlama bilgisi gerekmemektedir.</p>
+<h2 id="yazılım-atölyesi-ne-deĞİldİr"><a class="header" href="#yazılım-atölyesi-ne-deĞİldİr">Yazılım Atölyesi ne DEĞİLDİR?</a></h2>
+<p>Aşağıda maddeler halinde sıraladığımız konular Yazılım Atölyesi'nin amacı dahilinde değildir.</p>
+<ul>
+<li>Genel bilgisayar kullanımı</li>
+<li>Word, Excel, Powerpoint programları</li>
+<li>Web sitesi hazırlama</li>
+<li>iOS/Android uygulamaları geliştirme</li>
+</ul>
+<h2 id="dersler"><a class="header" href="#dersler">Dersler</a></h2>
+<p>Derslerimiz Pazar günleri Almanya saati ile 14:00'da, Türkiye saati ile 15:00'da online olarak yapılmaktadır. Derse davet bağlantısı dersten önce whatsapp grubundan paylaşılmaktadır. Henüz gruba ekli değilseniz iletişim sayfamızdaki bilgileri kullanarak bize ulaşabilirsiniz.</p>
+<h2 id="kaynaklar--materyaller"><a class="header" href="#kaynaklar--materyaller">Kaynaklar &amp; Materyaller</a></h2>
+<p>Ders süresince aşağıdaki materyal ve kaynaklardan faydalanıyor olacağız. Tüm bu kaynaklar, alanlarında yetkin araştırmacılar tarafından geliştirilmiş ve siz öğrencilerin kullanımına ücretsiz olarak sunulmuştur:</p>
+<ul>
+<li>Programlama dili: <a href="https://racket-lang.org/">Racket</a></li>
+<li>Geliştirme ortamı: <a href="https://download.racket-lang.org/">DrRacket</a></li>
+</ul>
+<h3 id="almanca"><a class="header" href="#almanca">Almanca</a></h3>
+<ul>
+<li>Kitap: <a href="https://www.deinprogramm.de/sdp/">Schreibe Dein Programm!</a></li>
+<li>Eğitim videoları: <a href="https://www.youtube.com/playlist?list=PL1XF9qjV8kH11R-SRa0g8SaB0DOUhxH5p">Informatik I - Database Systems Research Group at U Tübingen</a></li>
+<li>Racket dökümantasyon: <a href="https://docs.racket-lang.org/deinprogramm/index.html">Sprachebenen und Material zu Schreibe Dein Programm!</a></li>
+</ul>
+<h3 id="İngilizce"><a class="header" href="#İngilizce">İngilizce</a></h3>
+<ul>
+<li>Kitap: <a href="https://htdp.org/">How to Design Programs</a></li>
+<li>Racket dokümantasyon: <a href="https://docs.racket-lang.org/">Racket Documentation</a></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ders-1"><a class="header" href="#ders-1">Ders 1</a></h1>
+<p>Bu dersimizde;</p>
+<ul>
+<li>DrRacket kurulumu ve ayarları</li>
+<li>Sayılar, metinler, resimler ile hesaplamalar</li>
+<li><code>define</code> ile isimlendirme</li>
+</ul>
+<p>konularını çalışacağız. Haydi başlayalım...</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ders-notları"><a class="header" href="#ders-notları">Ders Notları</a></h1>
+<h2 id="ders-videosu"><a class="header" href="#ders-videosu">Ders Videosu</a></h2>
+<p><a href="https://www.youtube.com/watch?v=NsfSTQ6MOtY" target="_blank"><img src="chapter-1/ders1.png"></a></p>
+<h2 id="drracket-kurulum-ve-ayarlar"><a class="header" href="#drracket-kurulum-ve-ayarlar">DrRacket: Kurulum ve Ayarlar</a></h2>
+<p>İlk olarak aşağıdaki bağlantıyı kullanarak <code>DrRacket</code> programını indirelim, kuralım ve ayarlarını yapalım:</p>
+<pre><code>https://download.racket-lang.org/
+</code></pre>
+<p>DrRacket istenirse <code>Almanca</code> olarak da kullanılabilir.</p>
+<pre><code>Help &gt; Deutsche Benützeroberflache für DrRacket &gt; In Ordnung - Beenden
+</code></pre>
+<p>Bu ayarı yaptıktan sonra DrRacket programını yeniden başlatmanız gerekmektedir.</p>
+<p>DrRacket, programlamaya giriş eğitimini kolaylaştırmak için bizlere yardımcı diller ve eğitim paketleri sunar. Şimdi bu ayarları yapalım:</p>
+<pre><code>Language &gt; Choose Language &gt; Die Macht der Abstraktion - Anfänger
+Language &gt; Add Teachpack &gt; Image2.ss
+</code></pre>
+<p>Dil ve eğitim paketi seçtikten sonra <code>Run</code> tuşuna basarak yaptığımız değişiklikleri kullanıma alalım.</p>
+<p><img src="chapter-1/drracket_lang_teachpack.png" alt="Dil ve Eğitim Paketi Ayarları" /> </p>
+<p>DrRacket 2 ayrı pencereden oluşur. Bunlar <code>Definition Window</code> (Tanımlama Penceresi) ve <code>Interaktion Window</code> (Etkileşim Penceresi) olarak adlandırılır.</p>
+<p>Etkileşim penceresini kullanarak Racket dilini tanımaya başlayalım.</p>
+<h2 id="basit-hesaplamalar"><a class="header" href="#basit-hesaplamalar">Basit Hesaplamalar</a></h2>
+<p>Etkileşim penceresini bir hesap makinası gibi düşünebilirsiniz. Haydi ona basit bir şeyler soralım:</p>
+<pre><code class="language-racket">42
+</code></pre>
+<p>Ya da:</p>
+<pre><code class="language-racket">3.141592653
+</code></pre>
+<p>Daha karışık bir soru:</p>
+<pre><code class="language-racket">(+ 40 2)
+</code></pre>
+<p>Yukarıda farkında olmadan ilk fonksiyon çağırımınızı yapmış oldunuz. <code>+</code> fonksiyonun adı, <code>40</code> ve <code>2</code> parametreleri.</p>
+<blockquote>
+<p>Kural:
+Fonksiyonlar parantez içinde yazılır.</p>
+</blockquote>
+<blockquote>
+<p>Kural:
+Fonksiyon adı parametrelerden önce yazılır. (Prefix Notation)</p>
+</blockquote>
+<blockquote>
+<p>Kural:
+Fonksiyon adı ve parameteleri arasına boşluk karakteri yazılır.
+(function argument1 argument2 argument3 ...)</p>
+</blockquote>
+<h2 id="daha-karmaşık-hesaplamalar"><a class="header" href="#daha-karmaşık-hesaplamalar">Daha Karmaşık Hesaplamalar</a></h2>
+<p>İç içe geçmiş, daha kompleks sorular da sorabiliriz.</p>
+<pre><code class="language-racket">(odd? (+ 40 2))
+(+ (+ 20 20) (+ 1 1))
+</code></pre>
+<blockquote>
+<p>Kural:
+Hesaplar içeriden dışarıya doğru yapılır. En önce en içteki parantezin değeri hesaplanır. Daha sonra çıkan sonuç ile hesaba devam edilir.</p>
+</blockquote>
+<p>Birlikte hasaplayalım:</p>
+<pre><code class="language-racket">5 + 10 / 2 - 2 * 4
+</code></pre>
+<p>Matematikte kural olarak çarpma ve bölme işlemi toplama ve çıkarmadan önce yapılır:</p>
+<pre><code class="language-racket">5 + (10 / 2) - (2 * 4)
+</code></pre>
+<p>Yukarıdaki hesaplamayı <code>Racket</code> dilinde yazmak istersek:</p>
+<pre><code class="language-racket">(- (+ 5 (/ 10 2)) (* 2 4)) # ya da
+(* 5 (- (/ 10 2) (* 2 4)))
+</code></pre>
+<h2 id="sadece-sayılar-mı-var"><a class="header" href="#sadece-sayılar-mı-var">Sadece Sayılar mı var?</a></h2>
+<p>Racket dilinin yapı taşları arasında sayılardan başka <code>türler</code> de var. </p>
+<p>Mesela aşağıdaki bir <code>string</code> (Metin):</p>
+<pre><code class="language-racket">&quot;Fatih&quot;
+</code></pre>
+<p><code>odd</code> ingilizce de <strong>tek sayı</strong>ları ifade etmek için kullanılıyor. <code>odd?</code> fonksiyonu ise Racket dilinde eğer verilen sayı tek ise <code>#t</code> (True: yani doğru), çift ise <code>#f</code> (False: yani yanlış) değerini dönüyor. <code>#t</code> ve <code>#f</code> değerlerini <code>boolean</code> (mantıksal değerler) denir.</p>
+<pre><code class="language-racket">(odd? 42)
+</code></pre>
+<p>Racket'da bulabileceğiniz bir başka değer ise <code>image</code> (Resim). Aşağıdaki ifadeyi çalıştırırsanız size 50 yarıçapında, içi dolu, kırmızı bir daire resmi üretir.</p>
+<pre><code class="language-racket">(circle 50 &quot;solid&quot; &quot;red&quot;)
+</code></pre>
+<blockquote>
+<p>İPUCU: DrRacket etkileşim penceresinde <code>ESC+P</code> tus kombinasyonu ile en son yazdığınız satırı geri çağırabilirsiniz.</p>
+</blockquote>
+<p>İşte bunlara <code>Literals</code> (Literale) ya da <code>Constants</code> diyoruz. Yani Yapıtaşları. En basit değerler. Daha fazla basitleştirilemezler.</p>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: left">Literal</th><th></th><th>Signature</th></tr></thead><tbody>
+<tr><td style="text-align: left">#t #f</td><td>Mantıksal değerler (doğru, yanlış)</td><td>boolean</td></tr>
+<tr><td style="text-align: left">&quot;Fatih&quot; &quot;x&quot; &quot; &quot;</td><td>Yazı</td><td>string</td></tr>
+<tr><td style="text-align: left">0 1983 -42 007</td><td>Tam Sayılar</td><td>integer</td></tr>
+<tr><td style="text-align: left">0.42 3.1415 -273.15</td><td>Virgüllü sayılar</td><td>rational</td></tr>
+<tr><td style="text-align: left">✰</td><td>Resimler</td><td>image</td></tr>
+</tbody></table>
+</div>
+<p>String turunu kullanarak da hesaplamalar yapabiliriz:</p>
+<pre><code class="language-racket">(string-append &quot;Merhaba&quot; &quot;Fatih&quot;)
+(string-append &quot;Merhaba&quot; &quot; &quot; &quot;Fatih&quot;)
+(string-length &quot;Fatih&quot;)
+(string-&gt;number &quot;42&quot;)
+</code></pre>
+<p>Ya da resim kullanarak:</p>
+<pre><code class="language-racket">(circle 20 &quot;solid&quot; &quot;red&quot;)
+(rectangle 100 50 &quot;outline&quot; &quot;blue&quot;)
+(star 50 &quot;solid&quot; &quot;red&quot;)
+(above (circle 20 &quot;solid&quot; &quot;red&quot;) (rectangle 100 50 &quot;solid&quot; &quot;blue&quot;))
+(överlay (circle 30 &quot;solid&quot; &quot;red&quot;) (rectangle 200 100 &quot;outline&quot; &quot;black&quot;))
+</code></pre>
+<p>Bknz: <a href="chapter-1/../misc/documentation.html#circle">circle</a>, <a href="chapter-1/../misc/documentation.html#rectangle">rectangle</a>, <a href="chapter-1/../misc/documentation.html#above">above</a>, <a href="chapter-1/../misc/documentation.html#overlay">overlay</a>, <a href="chapter-1/../misc/documentation.html#overlayxy">overlay/xy</a></p>
+<h2 id="İfadelerin-İsimlendirilmesi-define"><a class="header" href="#İfadelerin-İsimlendirilmesi-define">İfadelerin İsimlendirilmesi: define</a></h2>
+<p>Yazdığımız ifadelere bir isim vererek onları daha sonra kullanabiliriz:</p>
+<pre><code class="language-racket">(define pi 3.141592653)
+(define fatih-tel &quot;+49 111222333&quot;)
+(define mavi-daire (circle 100 &quot;solid&quot; &quot;blue&quot;))
+(define gün-dakika (* 24 60))
+</code></pre>
+<p><code>(define ... ...)</code> özel bir form. Bu form hesaplanan bir şey değil, bir efekti var. İkinci parametredeki ifadeyi birinci parametredeki isme bağlıyor.</p>
+<pre><code class="language-racket">(define isim ifade)
+</code></pre>
+<blockquote>
+<p>Kural:
+isimler ( ) [ ] { } &quot; , ' ` ; # | \ karakterleri ile başlayamaz.</p>
+</blockquote>
+<blockquote>
+<p>Kural: 
+isimler bir sayı ile eşit olamaz</p>
+</blockquote>
+<blockquote>
+<p>Kural:
+İsimler space, tab, return karakterleri içeremez.</p>
+</blockquote>
+<blockquote>
+<p>Kural:
+daha önce başka bir değere bağlanmış olmamalı.</p>
+</blockquote>
+<blockquote>
+<p>Kural: Büyük/küçük karakter farketmiyor.</p>
+</blockquote>
+<p>Aşağıdaki örneğin yukarıdaki kurallara uyup uymadığına inceleyelim:</p>
+<pre><code class="language-racket">(define eu-&gt;us$ 1.02)
+</code></pre>
+<h2 id="alıştırmalar"><a class="header" href="#alıştırmalar">Alıştırmalar</a></h2>
+<p>Şimdiye kadar öğrendiklerimizi kullanarak Almanya'nın bayrağını yapmaya çalışalım. Siyah, kırmızı ve altın rengi olmak üzere 3 tane dikdörtgene ihtiyacımız var. Bunları üst üste koyarsak oldu demektir:</p>
+<pre><code class="language-racket">(define siyah-dikdortgen (rectangle 500 100 &quot;solid&quot; &quot;black&quot;))
+(define kirmizi-dikdortgen (rectangle 500 100 &quot;solid&quot; &quot;red&quot;))
+(define altin-dikdortgen (rectangle 500 100 &quot;solid&quot; &quot;gold&quot;))
+(define alman-bayragi (above siyah-dikdortgen kirmizi-dikdortgen altin-dikdortgen))
+</code></pre>
+<p>Bu tanımlamaları yaptıktan sonra <code>alman-bayragi</code> isimli ifadeyi çalıştırırsak sonucu görebiliriz:</p>
+<pre><code class="language-racket">alman-bayrağı
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ev-Ödevi"><a class="header" href="#ev-Ödevi">Ev Ödevi</a></h1>
+<ol>
+<li>
+<p>Aşağıdaki matematiksel ifadeleri Racket dilinde yazarak çalıştıralım:</p>
+<ol>
+<li>42 * 6</li>
+<li>23 + (42 / 7)</li>
+<li>(12 * 5) + (4 * (22 + 17))</li>
+</ol>
+</li>
+<li>
+<p>Racket dili tarafından tanımlanmış <a href="chapter-1/../misc/documentation.html#circle">circle</a>, <a href="chapter-1/../misc/documentation.html#rectangle">rectangle</a>, <a href="chapter-1/../misc/documentation.html#star">star</a>, <a href="chapter-1/../misc/documentation.html#overlay">overlay</a> ve <a href="chapter-1/../misc/documentation.html#overlayxy">overlay/xy</a> gibi fonksiyonları kullanarak Türk Bayrağımızı çizebilir misiniz?</p>
+</li>
+<li>
+<p>Derste yaptığımız Alman Bayrağı'nın gerçek oranı 3/5'tır. Yani genişliği 5 birim ise yüksekliği 3 birimdir. Dolayısı ile her bir rengi oluşturan dikdörtgenlerin yükseklikleri 1'er birimdir. Öyle bir Alman Bayrağı yapalım ki <code>genişlik</code> değerini kaç verirsek geri kalan ölçüleri ona göre ayarlasın ve böylece istediğimiz boyutta bir bayrak çizebilelim.</p>
+</li>
+</ol>
+<p>Örnek:</p>
+<pre><code>(define genişlik 500)
+</code></pre>
+<p>Eğer genişlik değerini 500 olarak tanımlarsak, bayrağın yüksekliği 300 (genişlik * 3/5) olur. Renkleri oluşturan dikdörtgenler de 500'e 100 (500 / 5) olur.</p>
+<pre><code>(define genişlik 600)
+</code></pre>
+<p>Eğer genişlik değerini 600 olarak tanımlarsak, bayrağın yüksekliği 200, dikdörtgenlerin boyutları ise 600'e 120 olur.</p>
+<p>Bu şekilde genişlik değeri değiştikçe boyutu değişen (ancak oranları sabit olan) bir Alman Bayrağı çizebilir misin?</p>
+<ol start="4">
+<li>İkinci ödevde yaptığımız gibi aynı şekilde genişlik değiştikçe boyutu değişen, ancak oranları bozulmayan bir Türk bayrağı çizebilir misin? Wikipedia sitesindeki Türk Bayrağı'nun boyutları ile ilgili yeterli bilgiyi bulabilirsin.</li>
+</ol>
+<p><a href="https://tr.wikipedia.org/wiki/T%C3%BCrk_bayra%C4%9F%C4%B1">Wikipedia: Türk Bayrağı</a></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="kaynaklar"><a class="header" href="#kaynaklar">Kaynaklar</a></h1>
+<p>Bu dersi daha iyi anlayabilmek için aşağıdaki kaynaklardan faydalanabilirsiniz:</p>
+<ul>
+<li>Kitap (Almanca): <a href="https://www.deinprogramm.de/sdp/">Schreibe Dein Programm!</a> Sayfa 40'a kadar.</li>
+<li>Video (Almanca): <a href="https://www.youtube.com/watch?v=96QmmOUEduM">DrRacket, REPL, Auswertung, Literale, komplexe Ausdrucke</a></li>
+<li>Video (Almanca): <a href="https://www.youtube.com/watch?v=_n6HZkiC3aM">Spezialform define, İdentifier, Definitionsfenster</a></li>
+<li>Video (Almanca): <a href="https://www.youtube.com/watch?v=vwdEO0hzTGg">Lambda-Abstraktion, Funktionsdefinition, Applikation</a></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ders-2"><a class="header" href="#ders-2">Ders 2</a></h1>
+<p>İlk dersimizde hep daha önce yazılmış olan fonksiyonları kullandık. Bu dersimizde ise <code>lambda</code> fonksiyonunu kullanarak parametre alabilen fonksiyonlar yazmayı öğreneceğiz.</p>
+<p>Haydi başlayalım...</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ders-notları-1"><a class="header" href="#ders-notları-1">Ders Notları</a></h1>
+<p>İlk dersimizde <code>+</code>, <code>odd?</code>, <code>string-append</code>, <code>circle</code> gibi daha önceden tanımlanmış fonksiyonları kullanarak bazı işler yapmaya çalıştık. Ancak henüz kendimiz bir fonksiyon tanımlamadık. Bu dersimizde <code>lambda</code> ifadesini kullanarak bir değişken alabilen fonksiyonların nasıl tanımlandığını öğreneceğiz.</p>
+<p><a href="https://www.youtube.com/watch?v=flDaxrP4e2w" target="_blank"><img src="chapter-2/ders2.png"></a></p>
+<h2 id="fonksiyonlar-prosedürler-lambda"><a class="header" href="#fonksiyonlar-prosedürler-lambda">Fonksiyonlar (Prosedürler): lambda</a></h2>
+<p>Şimdi birlikte elektrik faturamızı hesaplayabilmek için bir formül yazalım. Benim kullandığım elektrik şirketinin fiyatlandırma kuralı şu şekilde:</p>
+<pre><code class="language-racket">Kullanım Bedeli (Arbeitspreis) = 17,45 ct/kWh
+Taban Fiyat (Grundpreis)       = 10,16 €/Monat
+</code></pre>
+<p>Bu şirket taban fiyat olarak aylık 10,16 Euro alıyor. Bunun üzerine kullandığımız her kWh elektrik için 17.45 Cents ödüyoruz. Matematiksel olarak ifade etmek gerekirse;</p>
+<pre><code>Aylık Fatura = 10.16 + ((17.45 * KULLANIM-MIKTARI) / 100))
+</code></pre>
+<p>Örneğin, aylık 350 kWh elektrik kullanıldığında;</p>
+<pre><code>17.45 * 350 = 6107.5 Cents
+6107.5 Cents / 100 = 61.075 Euro
+61.075 + 10.16 = 71.235 Euro
+</code></pre>
+<p>Bunu <code>Racket</code> dilinde yazalım:</p>
+<pre><code class="language-racket">(+ 10.16 (/ (* 17.45 KULLANIM-MIKTARI) 100))
+</code></pre>
+<p>Bu ifadeyi bu çalıştırabilmek için <code>KULLANIM-MIKTARI</code> yazan yere gerçek değerler vermemiz gerekecek. Örneğin, yine 350 kWh elektrik kullanıldığını varsayarsak:</p>
+<pre><code class="language-racket">(+ 10.16 (/ (* 17.45 350) 100))
+</code></pre>
+<p>... sonucun 71.235 olduğunu görebiliriz.</p>
+<p>Peki bu ifadeyi içinde değişken olacak şekilde kullanmak istesek? Yani kullanılan elektrik miktarı değiştikçe hesaplayabilen bir fonksiyon yazmak istesek. <code>lambda</code> fonksiyonu tam da bu iş için var:</p>
+<pre><code class="language-racket">(lambda ... ...)
+</code></pre>
+<p><code>lambda</code> birinci parametrede verdiğimiz değişken isimlerini ikinci parametredeki ifadece yerine koyarak bize bir fonksiyon (prosedür) geri döner.</p>
+<pre><code class="language-racket">(lambda (x) (+ x 1))
+</code></pre>
+<p>Üretilen bu fonksiyona <code>define</code> kullanrak bir isim verebiliriz.</p>
+<pre><code class="language-racket">(define bir-ekle (lambda (x) (+ x 1)))
+</code></pre>
+<p>Örneğimize geri dönecek olursak:</p>
+<pre><code class="language-racket">(define fatura-hesapla
+  (lambda (x)
+    (+ 10.16 (/ (* 17.45 x) 100))))
+</code></pre>
+<h2 id="Örnek-fonksiyonlar"><a class="header" href="#Örnek-fonksiyonlar">Örnek Fonksiyonlar</a></h2>
+<p>Bir sayı alan ve verilen sayının karesini hesaplayan bir fonksiyon yazalım:</p>
+<pre><code class="language-racket">(define karesi
+  (lambda (x)
+    (* x x)))
+</code></pre>
+<p>Dikdörtgenin yüksekliği ve genişliğini temsil eden 2 sayı alan ve dikdörtgenin alanını hesaplayan bir fonksiyon yazalım.</p>
+<pre><code class="language-racket">(define dikdortgen-alani
+  (lambda (genislik yukseklik)
+    (* genislik yukseklik)))
+</code></pre>
+<p>Roketin x koordinatini temsil eden bir sayi alan ve roketi 200x200 boyutlarında boş bir arka plan üzerine (x, 100) noktasina yerleştiren bir fonksiyon yazalım.</p>
+<pre><code class="language-racket">(define roket (circle 20 &quot;solid&quot; &quot;red&quot;))
+(define arka-plan (empty-scene 200 200))
+
+(define giden-roket
+  (lambda (x)
+     (place-image roket x 100 arka-plan)))
+</code></pre>
+<p><code>Language &gt; Add Teackpack</code> menüsünden <code>universe.ss</code> isimli eğitim paketini yüklerseniz (<code>Run</code> butonuna basmayı unutmayalım), yazdığınız <code>giden-roket</code> programını bir anımasyon haline getirebilirsiniz.</p>
+<pre><code class="language-racket">(animate giden-roket)
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ev-Ödevi-1"><a class="header" href="#ev-Ödevi-1">Ev Ödevi</a></h1>
+<h2 id="negatife-çevir"><a class="header" href="#negatife-çevir">Negatife çevir</a></h2>
+<p>Bir sayı alan ve bu sayının negatifini dönen bir fonksiyon yazalım.</p>
+<p>Örnekler:</p>
+<pre><code class="language-bash">0 -&gt; 0
+1 -&gt; -1
+-4 -&gt; 4
+</code></pre>
+<h2 id="Üçgenin-alanı"><a class="header" href="#Üçgenin-alanı">Üçgenin alanı</a></h2>
+<p>Üçgenin taban uzunluğu ve yüksekliğini temsil eden 2 sayı alan ve üçgenin alanını hesaplayan bir fonkksiyon yazalım.</p>
+<p>Örnekler:</p>
+<pre><code class="language-bash">0 4 -&gt; 0
+3 4 -&gt; 6
+8 10 -&gt; 40
+</code></pre>
+<h2 id="pisagor-bağıntısı"><a class="header" href="#pisagor-bağıntısı">Pisagor Bağıntısı</a></h2>
+<p>İki kenar uzunluğu verilen bir dik üçgenin hipotenüsünü hesaplayalayan fonksiyon yazalım. Hatırlamak gerekirse; iki dik kenarın karelerinin toplamı, hipotenüsün karesine eşittir.</p>
+<p>Örnekler:</p>
+<pre><code>3 4 -&gt; 5
+5 12 -&gt; 13
+8 15 -&gt; 17
+7 24 -&gt; 25
+</code></pre>
+<h2 id="animasyon"><a class="header" href="#animasyon">Animasyon</a></h2>
+<p>Sahnenin sağ üst köşesinden başlayarak sağ alt köşesine doğru giden siyah bir top animasyonu yapalım. Bunu için bir sayı alan ve resim üreten bir fonksiyon yazmamız gerekecek. Daha sonra bu fonksiyonu <code>animate</code> kullanarak animasyona çevirebiliriz.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ders-3"><a class="header" href="#ders-3">Ders 3</a></h1>
+<p>Bu dersimizde problem çözerken bize yardımcı olan <code>Tasarım Reçetesi</code>'ni öğrenecek ve onu kullanarak yeni fonksiyonlar tanımlayacağız.</p>
+<p>Haydi başlayalım...</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ders-notları-2"><a class="header" href="#ders-notları-2">Ders Notları</a></h1>
+<p>Önceki derslerimizde çok basit işler yapan fonksiyonlar tanımladık. Bazılarını kolayca yazabildik, ancak işler zorlaştıkça hatasız çalışan kodu üretebilmek o kadar da kolay olmayabiliyor. Bir çözüm üretebilmek için öncelikle problemin kendisini analiz edip iyice anlamamız gerekiyor. İşte bu aşamada <code>Tasarım Reçetesi</code> diye adlandırdığımız bir yöntem bize yardımcı olacak.</p>
+<h2 id="tasarım-reçetesi"><a class="header" href="#tasarım-reçetesi">Tasarım Reçetesi</a></h2>
+<p>Tasarım reçetesi, problem tanımından yola çıkarak kendimize sorular sora sora, sorunu çözen bir programa ulaşmak için adım adım ilerleyebileceğimiz bir süreç sunar.</p>
+<p>Bu yaklaşımın yeniliği, başlangıç seviyesi programlar için ara ürünlerin oluşturulmasıdır. Bir öğrenci sıkıştığında, bir uzman veya bir eğitmenin mevcut ara ürünleri inceleyerek yardımcı olabilir. Bunun için tasarım sürecindeki genel soruları kullarak öğrencinin problemi daha iyi anlamasına yardımcı olur ve hatasını kendisinin bulmasını sağlamaya çalışır. İşte bu kendi kendini güçlendiren süreç, programlama ve program tasarımı arasındaki temel farktır.</p>
+<p>Şimdi de tasarım reçetesini oluşturan ara ürünleri inceleyelim:</p>
+<h3 id="1-açıklama"><a class="header" href="#1-açıklama">1. Açıklama</a></h3>
+<p>Fonksiyonun neyi hesapladığı sorusuna kısa ve öz bir cevap verin.</p>
+<h3 id="2-sözleşme"><a class="header" href="#2-sözleşme">2. Sözleşme</a></h3>
+<p>İstenen fonksiyonun ne tür verileri tükettiğini ve ürettiğini belirtin. </p>
+<h3 id="3-testler"><a class="header" href="#3-testler">3. Testler</a></h3>
+<p>Fonksiyonun sözleşmesine ve açıklamasına uygun örnekler kullanarak testler yazın ve fonksiyonun tüm testleri geçtiğinden emin olun. Problemi daha iyi anlayabilmek ve hataları önceden keşfedebilmek için bu adım çok önemlidir. Testler ayrıca, ihtiyaç duyulduğunda diğerlerinin fonksiyonu anlamasına yardımcı olur.</p>
+<h3 id="4-kod"><a class="header" href="#4-kod">4. Kod</a></h3>
+<p>Artık çözülmesi gereken problemi daha iyi anladığımıza göre önce fonksiyonun şablonunu, sonra da kodunu yazabiliriz.</p>
+<h2 id="Örnekler"><a class="header" href="#Örnekler">Örnekler</a></h2>
+<p>Tasarım reçetesini kullanmayı öğrenmek için, önceki derslerimizde tanımladığımız fonksiyonları şimdi bir de bu yöntemi kullanarak tanımlayalım. Her bir aşamada tasarım reçetesinin sorularını kendimize soralım ve ara ürünleri oluşturalım. Böylece adım adım çözüme ilerleyeceğiz.</p>
+<pre><code class="language-racket">;; Soru 1: Bu fonksiyon neyi hesaplıyor?
+;; Açıklama
+;; Verilen sayının karesini hesaplar
+
+;; Soru 2: Bu fonksiyon ne tür veriler tüketiyor ve üretiyor?
+;; Sözleşme
+(: karesi (integer -&gt; integer))
+
+;; Soru 3: Bir kaç örnek verebilir misin?
+;; Testler
+(check-expect (karesi 0) 0)
+(check-expect (karesi 2) 4)
+(check-expect (karesi -3) 9)
+
+;; Soru 4: Son olarak fonksiyonun şablonunu ve kodunu yazabilir misin?
+;; Şablon
+;; (define karesi
+;;   (lambda (x)
+;;     (...)))
+;; Kod
+(define karesi
+  (lambda (x)
+    (* x x)))
+</code></pre>
+<pre><code class="language-racket">;; Açıklama:
+;; Yüksekliği ve genişliği verilen dikdörtgenin alanını hesaplar
+
+;; Sözleşme
+(: dikdortgen-alani (integer integer -&gt; integer))
+
+;; Testler:
+(check-expect (dikdortgen-alani 1 1) 1)
+(check-expect (dikdortgen-alani 1 2) 2)
+(check-expect (dikdortgen-alani 3 5) 15)
+
+;; Kod
+(define dikdortgen-alani
+  (lambda (genislik yukseklik)
+    (* genislik yukseklik)))
+</code></pre>
+<pre><code class="language-racket">;; Açıklama:
+;; Taban fiyat 10.16 Euro ve kullanım bedeli 17.45 Cents/KWh olmak üzere,
+;; verilen kullanım miktarı için aylık faturayı hesaplar
+
+;; Sözleşme:
+(: fatura-hesapla (rational -&gt; rational))
+
+;; Testler:
+(check-within (fatura-hesapla 0) 10.16 0.01)
+
+;; Kod:
+(define fatura-hesapla
+  (lambda (x)
+    (+ 10.16 (/ (* 17.45 x) 100))))
+</code></pre>
+<pre><code class="language-racket">(define roket (circle 20 &quot;solid&quot; &quot;red&quot;))
+(define arka-plan (rectangle 200 200 &quot;solid&quot; &quot;Medium Cyan&quot;))
+
+;; Açıklama:
+;; Verilen x koordinatına göre rocket resmini arka-planda gösterir.
+;; y koordnatı arka-planın ortası olarak sabit kalır.
+
+;; Sözleşme
+(: giden-roket (integer -&gt; image))
+
+;; Testler:
+(check-expect (giden-roket 30) (overlay/xy roket -30 -100 arka-plan))
+(check-expect (giden-roket 0) (overlay/xy roket 0 -100 arka-plan))
+
+;; Kod
+(define giden-roket
+  (lambda (x)
+     (overlay/xy roket (* -1 x) -100 arka-plan)))
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ev-Ödevi-2"><a class="header" href="#ev-Ödevi-2">Ev Ödevi</a></h1>
+<p>Aşağıdaki ödevleri yaparken her bir fonksiyon için <code>Açıklama</code>, <code>Sözleşme</code>, <code>Testler</code> ve <code>Kod</code> aşamalarını tek tek yapmayı unutmayalım.</p>
+<h2 id="Önceki-Ödevler"><a class="header" href="#Önceki-Ödevler">Önceki Ödevler</a></h2>
+<p>Ders 2'nin ödevlerinde <code>negatife çevir</code>, <code>üçgenin alanı</code> ve <code>pisagor bağıntısı</code> fonksiyonlarının sadece kodunu yazmanızı istemiştik. Şimdi ise bu fonksiyonarlı tasarım reçetesine uygun olarak düzenleyelim. Her bir fonksiyona <code>Açıkmala</code>, <code>Sözleşme</code> ve <code>Test</code> bölümlerini de ekleyelim.</p>
+<h2 id="birler-basamağı"><a class="header" href="#birler-basamağı">Birler Basamağı</a></h2>
+<p>Bir sayı alan ve aldığı sayının birler basamağındaki rakamı dönen bir fonksiyon yaz.</p>
+<p>Örnekler:</p>
+<pre><code class="language-bash">0 -&gt; 0
+7 -&gt; 7
+18 -&gt; 8
+79 -&gt; 9
+296 -&gt; 6
+8645 -&gt; 5
+</code></pre>
+<h2 id="onlar-basamagi"><a class="header" href="#onlar-basamagi">Onlar Basamagi</a></h2>
+<p>Bir sayı alan ve aldığı sayının onlar basamağındaki rakamı dönen bir fonksiyon yaz.</p>
+<p>Örnekler:</p>
+<pre><code class="language-bash">0 -&gt; 0
+7 -&gt; 0
+18 -&gt; 1
+79 -&gt; 7
+296 -&gt; 9
+8645 -&gt; 4
+</code></pre>
+<h2 id="yüzler-basamağı"><a class="header" href="#yüzler-basamağı">Yüzler basamağı</a></h2>
+<p>Bir sayı alan ve aldığı sayının yüzler basamağındaki rakamı dönen bir fonksiyon yaz.</p>
+<p>Örnekler:</p>
+<pre><code class="language-bash">0 -&gt; 0
+7 -&gt; 0
+18 -&gt; 0
+79 -&gt; 0
+296 -&gt; 2
+8645 -&gt; 6
+</code></pre>
+<h2 id="animasyon-1"><a class="header" href="#animasyon-1">Animasyon</a></h2>
+<p>x ve y koordinatlarını temsil eden iki sayı alan ve verilen bu koordinatlara göre 10 yarıçapında siyah bir daireyi 200x200 boyutlarında gri bir karenin üzerine yerleştiren bir fonksiyon yaz.</p>
+<p>Örnek 1: x=0 ve y=0 değerleri için;</p>
+<p><img src="chapter-3/../images/chapter_2_homework.png" alt="x=0, y=0" /></p>
+<p>Örnek 2: x=-100 ve y=-100 değerleri için;</p>
+<p><img src="chapter-3/../images/chapter_2_homework_100_100.png" alt="x=100, y=100" /></p>
+<p><code>animate</code> fonksiyonunu kullanarak yukarıda yazdığın fonksiyonu bir anımasyona çevir!</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ders-4"><a class="header" href="#ders-4">Ders 4</a></h1>
+<p>Bu dersimizde koşul ifadelerini (conditionals) kullanarak programımıza nasıl yön verebileceğimizi öğreneceğiz.</p>
+<p>Haydi başlayalım...</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ders-notları-3"><a class="header" href="#ders-notları-3">Ders Notları</a></h1>
+<p>Bazen hesaplamaların duruma bağlı olarak farklı şekilde ilerlemesi gerekebilir. Örneğin, zıplayan top animasyonu yaptığımızı düşünelim. Top serbest düşüş yaparken program normal bir şekilde ilerler, ancak top canvas'ın alt kenarına eriştiğinde onun daha fazla aşağı inmesini engellememiz gerekir. Yani bir nevi bir karar mekanızması oluşturmamız gerekir. <code>cond</code> fonksiyonu tam da bu işi yapmaya yarıyor. Yapısı şu şekilde ifade edilebilir:</p>
+<pre><code class="language-racket">(cond [soru-ifadesi-1 cevap-ifadesi-1]
+      [soru-ifadesi-2 cevap-ifadesi-2]
+      ...
+      [else cevap-ifadesi])
+</code></pre>
+<p><code>cond</code> kendisine verilen soru ifadelerini sırası ile çalıştırarak ilk #true dönen ifadeye karşılık gelen cevap ifadesini değerlendirir. Soru ifadelerinden hiçbiri #true olarak değerlendirilmezse, koşul değeri <code>else</code> yan tümcesinin cevap ifadesidir. Eğer <code>else</code> kısmı yok ise ve soru ifadelerinden hiç biri #true olarak değerlendirilmedi ise bu bir hatadır. Yada verilen soru ifadelerinden herhangi biri boolean (#true yada #false) dönen bir ifade değilse, bu durumda da bir hata mesajı döner.</p>
+<p>Örnekler üzerinden inceleyelim:</p>
+<pre><code class="language-racket">;; Yaşı verilen bir kişinin ehliyet alıp alamayacağını söyler.
+;; Bir sayı alır, verilen sayı 17'ye eşit ya da daha büyükse #t
+;; değil ise #f döner
+
+(: ehliyet-alabilir (integer -&gt; boolean))
+
+(check-expect (ehliyet-alabilir 1) #f)
+(check-expect (ehliyet-alabilir 16) #f)
+(check-expect (ehliyet-alabilir 17) #t)
+(check-expect (ehliyet-alabilir 39) #t)
+
+(define ehliyet-alabilir
+  (lambda (yaş)
+    (cond
+      [(&lt; yaş 17) #f]
+      [else #t])))
+</code></pre>
+<pre><code class="language-racket">;; Verilen yaş değerine göre hangi okula gidilmesi gerektiğini söyler.
+;; &lt; 0 -&gt; &quot;Okul yok&quot;
+;; 0 - 5 -&gt; &quot;Kindergarten&quot;
+;; 6 - 10 -&gt; &quot;Grundschule&quot;
+;; 11 - 19 -&gt; &quot;Gymnasium&quot;
+;; 20 -&gt; ... -&gt; &quot;Universitaet&quot;
+
+(check-expect (hangi-okul 5) &quot;Kindergarten&quot;)
+(check-expect (hangi-okul 6) &quot;Grundschule&quot;)
+(check-expect (hangi-okul 10) &quot;Grundschule&quot;)
+(check-expect (hangi-okul 11) &quot;Gymnasium&quot;)
+(check-expect (hangi-okul 14) &quot;Gymnasium&quot;)
+(check-expect (hangi-okul 60) &quot;Universitaet&quot;)
+(check-expect (hangi-okul 19) &quot;Gymnasium&quot;)
+(check-expect (hangi-okul 20) &quot;Universitaet&quot;)
+
+(: hangi-okul (integer -&gt; string))
+
+(define hangi-okul
+  (lambda (yaş)
+    (cond
+      [(&lt;= yaş 0) &quot;Okul yok&quot;]
+      [(&lt;= yaş 5) &quot;Kindergarten&quot;]
+      [(and (&gt;= yaş 6) (&lt;= yaş 10)) &quot;Grundschule&quot;]
+      [(and (&gt;= yaş 11) (&lt;= yaş 19)) &quot;Gymnasium&quot;]
+      [else &quot;Universitaet&quot;])))
+</code></pre>
+<pre><code class="language-racket">;; Bir sayı alır ve trafik lambası resmi üretir.
+;; Verilen sayı;
+;; 10'a eşit ya da daha küçükse kırmızı ışık,
+;; 12'ye eşit ya da daha küçükse sarı ışık,
+;; 17'ye eşit ya da dağa küçükse yeşik ışık,
+;; 19'a eşit ya da daha küçükse sarı ışık,
+;; 19'dan daha sonra da kırmızı ışık yanıyormuş gibi gösterir.
+
+(: trafik-lambasi-sn (rational -&gt; image))
+
+(check-expect (trafik-lambasi-sn 1) kirmizi-isik)
+(check-expect (trafik-lambasi-sn 9) kirmizi-isik)
+(check-expect (trafik-lambasi-sn 10) kirmizi-isik)
+(check-expect (trafik-lambasi-sn 11) sari-isik)
+(check-expect (trafik-lambasi-sn 12) sari-isik)
+(check-expect (trafik-lambasi-sn 13) yesil-isik)
+(check-expect (trafik-lambasi-sn 17) yesil-isik)
+(check-expect (trafik-lambasi-sn 18) sari-isik)
+(check-expect (trafik-lambasi-sn 19) sari-isik)
+(check-expect (trafik-lambasi-sn 20) kirmizi-isik)
+(check-expect (trafik-lambasi-sn 180) kirmizi-isik)
+
+(define kirmizi (circle 40 &quot;solid&quot; &quot;red&quot;))
+(define sari (circle 40 &quot;solid&quot; &quot;yellow&quot;))
+(define yesil (circle 40 &quot;solid&quot; &quot;green&quot;))
+(define gri (circle 40 &quot;solid&quot; &quot;grey&quot;))
+(define lamba (rectangle 100 260 &quot;solid&quot; &quot;black&quot;))
+(define kirmizi-isik (overlay (above kirmizi gri gri) lamba))
+(define sari-isik (overlay (above gri sari gri) lamba))
+(define yesil-isik (overlay (above gri gri yesil) lamba))
+
+(define trafik-lambasi-sn
+  (lambda (sn)
+    (cond
+      ((&lt;= sn 10) kirmizi-isik)
+      ((&lt;= sn 12) sari-isik)
+      ((&lt;= sn 17) yesil-isik)
+      ((&lt;= sn 19) sari-isik)
+      (else kirmizi-isik))))
+
+
+;; Bir sayı alır ve bu sayıyı 28'e bölerek trafik-lambasi-sn fonksiyonunu çağırarak bir resim üretir.
+;; animate fonksiyonu her saniyede 28 kare resim gösterdiği için böyle bir yöntem kullanıyoruz.
+
+(: trafik-lambasi (integer -&gt; image))
+
+(check-expect (trafik-lambasi 0) kirmizi-isik)
+(check-expect (trafik-lambasi 1) kirmizi-isik)
+(check-expect (trafik-lambasi 308) sari-isik)
+
+(define trafik-lambasi
+  (lambda (sn)
+    (trafik-lambasi-sn (/ sn 28))))
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ev-Ödevi-3"><a class="header" href="#ev-Ödevi-3">Ev Ödevi</a></h1>
+<ol>
+<li>
+<p>Bir sayı alan ve bu sayı tek ise #t, cift ise #f dönen bir fonksiyon yazalım. Sayının tek mi çift mi olduğunu anlamak için <code>modulo</code> fonksiyonunu kullanabilrsiniz. Hali hazırda tanımlanmış olan <code>even?</code> yada <code>odd?</code> fonksiyonlarını kullanmayalım.</p>
+</li>
+<li>
+<p><code>animate</code> fonksiyonunu kullanarak zıplayan bir top anımasyonu üretebilir misin? İlk önce 200x200 bir karenin üzerine 10 yarıçapında bir daire çizerek başlayabilirsin. Daha sonra bir sayı alıp bir resim üreten bir fonksiyon yazman gerekecek. Bu fonksiyon verilen sayı değerine göre dairenin <code>y</code> koordinatını yukarı ya da aşağı doğru hareket ettirecek.</p>
+</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ders-5"><a class="header" href="#ders-5">Ders 5</a></h1>
+<p>Bu dersimizde <code>define-record-procedures</code> fonksiyonunu kullanarak yeni veri yapıları üretmeyi öğreneceğiz.</p>
+<p>Haydi başlayalım...</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ders-notları-4"><a class="header" href="#ders-notları-4">Ders Notları</a></h1>
+<pre><code class="language-racket">(define-record-procedures ogrenci
+  make-ogrenci
+  ogrenci?
+  (ogrenci-adi
+   ogrenci-soyadi))
+
+(define ben (make-ogrenci &quot;fatih&quot; &quot;koksal&quot;))
+(define sen (make-ogrenci &quot;ali&quot; &quot;kurnaz&quot;))
+
+;; Açıklama
+;; Bir öğrenci alır ve onun tam adını döner
+
+;; Sozlesme
+(: tam-adi (ogrenci -&gt; string))
+
+;; Testler
+(check-expect (tam-adi ben) &quot;fatih koksal&quot;)
+(check-expect (tam-adi sen) &quot;ali kurnaz&quot;)
+(check-expect (tam-adi (make-ogrenci &quot;yusuf islam&quot; &quot;dagdelen&quot;)) &quot;yusuf islam dagdelen&quot;)
+
+;; Kod
+(define tam-adi
+  (lambda (ogrenci)
+    (string-append (ogrenci-adi ogrenci) &quot; &quot; (ogrenci-soyadi ogrenci))))
+</code></pre>
+<pre><code class="language-racket">(define-record-procedures nokta
+  make-nokta
+  nokta?
+  (nokta-x
+   nokta-y))
+
+;; İki nokta alır ve birbirleri ile toplayarak yeni bir nokta döner
+;; İki noktanın toplamı x ve y koordinatlarının toplamına eşittir
+
+(: iki-nokta-toplami (nokta nokta -&gt; nokta))
+
+(check-expect (iki-nokta-toplami (make-nokta 1 1) (make-nokta 2 2)) (make-nokta 3 3))
+(check-expect (iki-nokta-toplami (make-nokta 0 4) (make-nokta 1 3)) (make-nokta 1 7))
+
+(define iki-nokta-toplami
+  (lambda (n1 n2)
+      (make-nokta (+ (nokta-x n1) (nokta-x n2)) (+ (nokta-y n1) (nokta-y n2)))))
+</code></pre>
+<pre><code class="language-racket">(define-record-procedures nokta
+  make-nokta
+  nokta?
+  (nokta-x
+   nokta-y))
+
+;; Koordinat duzlemi uzerinde 2 nokta alir ve aralarindaki uzakligi hesaplar
+
+(: iki-nokta-arasindaki-uzaklik (nokta nokta -&gt; rational))
+
+(check-expect (iki-nokta-arasindaki-uzaklik (make-nokta 4 0) (make-nokta 0 3)) 5)
+(check-expect (iki-nokta-arasindaki-uzaklik (make-nokta 0 0) (make-nokta 3 0)) 3)
+(check-expect (iki-nokta-arasindaki-uzaklik (make-nokta 0 0) (make-nokta 0 2)) 2)
+(check-within (iki-nokta-arasindaki-uzaklik (make-nokta 5 0) (make-nokta 0 3)) (sqrt 34) 0.0000001)
+
+(define iki-nokta-arasindaki-uzaklik
+  (lambda (n1 n2)
+    (sqrt (+ (karesi (- (nokta-y n2) (nokta-y n1))) (karesi (- (nokta-x n2) (nokta-x n1)))))))
+
+(define karesi
+  (lambda (x)
+    (* x x)))
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ev-Ödevi-4"><a class="header" href="#ev-Ödevi-4">Ev Ödevi</a></h1>
+<p>TODO</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ders-6"><a class="header" href="#ders-6">Ders 6</a></h1>
+<p>Bu dersimizde liste veri yapısını ve <code>cons</code>, <code>first</code>, <code>rest</code> fonksiyonlarını kullanarak listeler alan veya üreten foknsiyonları inceleyeceğiz.</p>
+<p>Haydi başlayalım...</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ders-notları-5"><a class="header" href="#ders-notları-5">Ders Notları</a></h1>
+<pre><code class="language-racket">;; sayi-listesi
+;; - empty
+;; - (cons sayi sayi-listesi)
+</code></pre>
+<pre><code class="language-racket">;; Bir sayı-listesi alır ve bu sayıları 2 ile çarparak yeni bir sayı listesi döner
+;; [] -&gt; []
+;; [1] -&gt; [2]
+;; [3, 7] -&gt; [6, 14]
+
+;; (: liste-carpi-2 (sayi-listesi -&gt; sayi-listesi))
+
+(check-expect (liste-carpi-2 empty) empty)
+(check-expect (liste-carpi-2 (cons 1 empty)) (cons 2 empty))
+(check-expect (liste-carpi-2 (cons 3 (cons 7 empty))) (cons 6 (cons 14 empty)))
+(check-expect (liste-carpi-2 (cons 2 (cons 8 (cons 21 empty)))) (cons 4 (cons 16 (cons 42 empty))))
+
+(define liste-carpi-2
+  (lambda (lst)
+    (cond
+      ((empty? lst) empty)
+      (else (cons (* 2 (first lst)) (liste-carpi-2 (rest lst)))))))
+</code></pre>
+<pre><code class="language-racket">;; Bir sayı listesi alır ve her bir elemanın karesini hesaplayarak yeni bir liste döner.
+;; empty -&gt; empty
+;; [1] -&gt; [1](cons 1 (cons 2 empty))
+;; [1, 2] -&gt; [1, 4]
+;; [2, 3, 5] -&gt; [4, 9, 25]
+
+;; ( : liste-karesi (sayi-listesi -&gt; sayi-listesi))
+
+(check-expect (liste-karesi empty) empty)
+(check-expect (liste-karesi (cons 1 empty)) (cons 1 empty))
+(check-expect (liste-karesi (cons 1 (cons 2 empty))) (cons 1 (cons 4 empty)))
+(check-expect (liste-karesi (cons 2 (cons 3 (cons 5 empty)))) (cons 4 (cons 9 (cons 25 empty))))
+
+(define liste-karesi
+  (lambda (lst)
+    (cond
+      ((empty? lst) empty)
+      (else (cons (karesi (first lst)) (liste-karesi (rest lst)))))))
+
+
+(define karesi
+  (lambda (x)
+    (* x x )))
+</code></pre>
+<pre><code class="language-racket">;; string-listesi
+;; - empty
+;; - (cons string string-listesi)
+</code></pre>
+<pre><code class="language-racket">;; Bir string listesi alır ve liste içerisindeki tüm stringleri ard arda ekler.
+;; empty -&gt; &quot;&quot;
+;; [&quot;fatih&quot;] -&gt; &quot;fatih&quot;
+;; [&quot;fatih&quot;, &quot;koksal&quot;] -&gt; &quot;fatih koksal&quot;
+;; [&quot;mehmet&quot;, &quot;fatih&quot;, &quot;koksal&quot;] -&gt; &quot;mehmet fatih koksal&quot;
+
+;; (: liste-birlestir (string-listesi -&gt; string))
+
+(check-expect (liste-birlestir empty) &quot;&quot;)
+(check-expect (liste-birlestir (cons &quot;fatih&quot; empty)) &quot;fatih &quot;)
+(check-expect (liste-birlestir (cons &quot;fatih&quot; (cons &quot;koksal&quot; empty))) &quot;fatih koksal &quot;)
+(check-expect (liste-birlestir (cons &quot;mehmet&quot; (cons &quot;fatih&quot; (cons &quot;koksal&quot; empty)))) &quot;mehmet fatih koksal &quot;)
+
+(define liste-birlestir
+  (lambda (lst)
+    (cond
+      ((empty? lst) &quot;&quot;)
+      (else (string-append (first lst) &quot; &quot; (liste-birlestir (rest lst)))))))
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ev-Ödevi-5"><a class="header" href="#ev-Ödevi-5">Ev Ödevi</a></h1>
+<ol>
+<li>
+<p>Bir image listesi alan ve listedeki tüm image'ları üste üste koyarak yeni bir image oluşturan bir fonksiyon yazalım. (İpucu: Derste yaptığımız string listesi alarak tüm stringleri birleştiren fonksiyona benzer bir çözümü var).</p>
+</li>
+<li>
+<p>Bir sayı listesi ve bir sayı alan, listedeki sayıları tek tek ikinci parametrede aldığı sayıya ekleyen bir fonsiyon yazalım.
+Örnekler:</p>
+<ul>
+<li>[] 0 -&gt; 0</li>
+<li>[1] 0 -&gt; 1</li>
+<li>[2, 5] 4 -&gt; 11</li>
+</ul>
+</li>
+<li>
+<p>Bir nokta listesi alan ve listedeki noktaları toplayıp toplamı yeni bir nokta olarak dönen bir fonksiyon yazalım. (Hatırlatma: İki noktanın toplamı x ve y koordinatlarının ayrı ayrı toplanması ile elde edilir. (x1, y1) + (x2, y2) = (x1 + x2, y1 + y2).
+Örnekler:</p>
+</li>
+</ol>
+<ul>
+<li>[] - (0, 0)</li>
+<li>[(1, 4)] -&gt; (1, 4)</li>
+<li>[(1, 3), (3, 6)] -&gt; (4, 9)</li>
+</ul>
+<pre><code class="language-sh">(define-record-procedures nokta
+  make-nokta
+  nokta?
+  (nokta-x
+   nokta-y))
+</code></pre>
+<ol start="4">
+<li>Bir <code>boolean</code> listesi alan ve eğer tüm değerler <code>#t</code> ise <code>#t</code>, herhangi bir değer <code>#f</code> ise <code>#f</code> dönen bir fonksiyon yazalım.
+Örnekler:</li>
+</ol>
+<ul>
+<li>[] -&gt; #t</li>
+<li>[#t] -&gt; #t</li>
+<li>[#f] -&gt; #f</li>
+<li>[#t, #t] -&gt; #t</li>
+<li>[#t, #f] -&gt; #f</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ders-7"><a class="header" href="#ders-7">Ders 7</a></h1>
+<p>Bu dersimizde basit animasyonlar üretmek için kullandığımız <code>animate</code> fonksiyonunu hatırlattıktan sonra daha gelişmiş animasyonlar üretmemizi sağlayacak <code>big-bang</code> fonksiyonunu öğreneceğiz.</p>
+<p>Haydi başlayalım...</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ders-notları-6"><a class="header" href="#ders-notları-6">Ders Notları</a></h1>
+<h2 id="animate"><a class="header" href="#animate">animate</a></h2>
+<p>Hatırlayacak olursanız <code>animate</code> zaman bazlı similasyonlar üretebileceğimiz basit bir animasyon fonksiyonu. Programcının görevi verilen her bir doğal sayı için <code>image</code> üretecek fonksiyonu sağlamak. Bu fonksiyonu <code>animate</code> fonksiyonuna veridiğimizde bize similasyonu gösteriyor. İmzası şu şekilde:</p>
+<pre><code>; (: animate ((natural -&gt; image) -&gt; natural))
+</code></pre>
+<p><code>animate</code> fonksiyonu bir tuval açar ve saniyede 28 kez işleyen bir saat başlatır. Saatin her vuruşunda DrRacket fonksiyonun çağırımından o zamana kadar geçen vuruş sayısını resmi çizecek olan fonksiyona uygular. Üretilen her bir resmi tuvalde tek tek gösterir. Saniyede 28 kere olan bu işlem çok hızlı olduğundan biz oluşan resimleri sanki bir anımasyon gibi görürüz. Similasyon siz açılan pencereyi kapatana kadar devam eder ve geri dönüş değeri olarak o zamana kadar geçen vuruş sayısını doğal sayı olarak geri döner.</p>
+<p>Burada dikkatimizi ilk çeken şu olmalı. <code>animate</code> fonksiyonu başka bir fonksiyonu parametre olarak alıyor. Bu daha önce kullandığımız fonksiyonların imzalarına pek benzemiyor. Normalde fonksiyonlar <code>string</code>, <code>natural</code>, <code>number</code>, <code>boolean</code> ya da <code>image</code> gibi basit veri yapılarını parametre olarak alırlar. Ama burada da gördüğümüz üzere başka fonksiyonları parametre olarak kabul eden fonksiyonlar da var. <code>animate</code> fonksiyonunu imzasından da görülebileceği gibi öyle herhangi bir fonksiyonu parametre olarak kabul etmiyor. <code>natural</code> alan ve <code>image</code> ureten bir fonksiyon olmalı.</p>
+<p>İlk olarak <code>animate</code> fonksiyonunun nasıl çalıştığını anlamamıza da yardımcı olacak basit bir örnekle başlayalım:</p>
+<pre><code>(: kirmizi-rakam (natural -&gt; image))
+
+(define kirmizi-rakam
+  (lambda (t)
+    (place-image 
+     (text (number-&gt;string t) 100 &quot;red&quot;)
+     100 100
+     (empty-scene 200 200))))
+</code></pre>
+<p><code>kirmizi-rakam</code> fonksiyonu <code>animate</code> in bizden istediği gibi bir doğal sayı alıyor ve resim üretiyor. Ürettiği resim işe verilen doğal sayının 200x200 boyutlarında boş bir sahneye kırmızı renkte yazılmış hali. <code>kirmizi-rakam</code> fonksiyonuna değişik doğal sayı değerleri vererek ürettiği resmi inceleyebilirsiniz.</p>
+<pre><code>(kirmizi-rakam 42)
+</code></pre>
+<p>Şimdi <code>animate</code> kullanarak similasyonu başlatabiliriz:</p>
+<pre><code>(animate kirmizi-rakam)
+</code></pre>
+<p>Gördüğünüz gibi <code>animate</code> fonksiyonu similasyonu başlatarak doğal sayıları tek tek <code>kirmizi-rakam</code> fonksiyonuna veriyor. <code>kirmizi-rakam</code> fonksiyonu ise kendisine verilen doğal sayıları kanvas'a çiziyor.</p>
+<p>Başka bir örnek ile öğrendiklerimizi pekiştirelim:</p>
+<pre><code>(define ufo-sahnesi
+  (lambda(h)
+    (underlay/xy (rectangle 100 100 &quot;solid&quot; &quot;white&quot;) 50 h UFO)))
+ 
+(define UFO
+  (underlay/align &quot;center&quot;
+                  &quot;center&quot;
+                  (circle 10 &quot;solid&quot; &quot;green&quot;)
+                  (rectangle 40 4 &quot;solid&quot; &quot;green&quot;)))
+ 
+(animate ufo-sahnesi)
+</code></pre>
+<p><code>ufo-sahnesi</code> fonksiyonunu dikkatlice incelerseniz UFO'nun nasıl yavaş yavaş aşağıda indiğini göreceksiniz.</p>
+<h2 id="big-bang"><a class="header" href="#big-bang">big-bang</a></h2>
+<p><code>big-bang</code> daha karmaşık similasyonlar üretebileceğimiz bir fonksiyon. Bir çok parametre alıyor, ancak biz şimdilik isteğe bağlı olan parametrelerden sadece 2 tanesini kullanacağız. İmzası şu şekilde:</p>
+<pre><code>;(big-bang
+;  &lt;başlangıç-hali&gt;
+;  (on-tick ...)
+;  (to-draw ... ... ...)
+;  ....)
+</code></pre>
+<p><code>big-bang</code> ılk parametre olan başlangıç halini kullanarak bir sahne başlatıyor ve saati çalıştırıyor. Saat her vurduğunda <code>on-tick</code> fonksiyonuna parametre olarak verdiğimiz fonksiyona sahnenin suanki halini verip bir sonraki sahnede dünyanın nasıl değiştiğini öğreniyor. <code>to-draw</code> fonksiyona verdiğimiz fonksiyonu kullarak da dünyamızı sahneye çiziyor.</p>
+<p>Kulağa çok karmaşık gelen bu tanımı anlayabilmek için daha önce <code>animate</code> fonksiyonu ile yaptığımız similasyonun aynısını şimdi bir de <code>big-bang</code> ile yapalım.</p>
+<pre><code>(define 1ekle
+  (lambda (t)
+    (+ 1 t)))
+
+(big-bang
+  1
+  (on-tick 1ekle)
+  (to-draw kirmizi-rakam))
+</code></pre>
+<p>Animasyonumuzda değişen tek şey sahnede göstereceğimiz sayı olduğundan, dünyamızı temsilen sadece bir doğal sayı kullanıyoruz. Başlangıç hali için <code>1</code> verdik. Saat her vurduğunda bu sayının bir artmasını istedik. Sahneye çizmek için ise daha önce tanımladığımız <code>kirmizi-rakam</code> fonksiyonunu kullandık. <code>big-bang</code> ile similasyonu çalıştırdığımızda daha önce <code>animate</code> ile yaptığımızın aynısını üretmiş olduk.</p>
+<p>Şimdi çok daha karmaşık bir animasyon yapalım. İçinde bulunduğu odanın duvarlarından seke seke ilerleyen kırmızı bir top yapacağız. Daha öncekine göre daha karmaşık olan bu animasyonu üretmek için dünyamızı temsilen kullandığımız veri yapısı da daha karmaşık olacak.</p>
+<pre><code>(define-record-procedures top
+  make-top
+  top?
+  (top-x
+   top-y
+   top-x-yon
+   top-y-yon))
+</code></pre>
+<p><code>top</code>'un 4 niteliği var. x-koordinatını temsilen <code>top-x</code>, y-koordinatını temsilen <code>top-y</code>, topun x-koordunatındaki ivmesini temsilen <code>top-x-yon</code> ve y-koordinatındaki ivmesini temsilen <code>top-y-yon</code>.</p>
+<p>Saat her vurduğunda dünyamızın nasıl değişmesini istediğimizi <code>tick</code> fonksiyonunda tanımlayalım.</p>
+<pre><code>(: tick (top -&gt; top))
+
+(check-expect (tick (make-top 1 50 2 1)) (make-top 3 51 2 1))
+(check-expect (tick (make-top 3 51 2 1)) (make-top 5 52 2 1))
+(check-expect (tick (make-top 5 52 2 1)) (make-top 7 53 2 1))
+(check-expect (tick (make-top 7 53 2 1)) (make-top 9 54 2 1))
+(check-expect (tick (make-top 0 53 -1 1)) (make-top 1 53 1 1))
+(check-expect (tick (make-top -4 67 -5 2)) (make-top 1 67 5 2))
+(check-expect (tick (make-top 200 50 3 2)) (make-top 199 50 -3 2))
+(check-expect (tick (make-top 7 0 5 -2)) (make-top 7 1 5 2))
+(check-expect (tick (make-top 5 -1 4 -2)) (make-top 5 1 4 2))
+(check-expect (tick (make-top 50 200 2 3)) (make-top 50 199 2 -3))
+
+(define tick
+  (lambda(t)
+    (cond
+      ((&lt;= (top-x t) 0) (make-top 1 (top-y t) (* -1 (top-x-yon t)) (top-y-yon t)))
+      ((&gt;= (top-x t) 200) (make-top 199 (top-y t) (* -1 (top-x-yon t)) (top-y-yon t)))
+      ((&lt;= (top-y t) 0) (make-top (top-x t) 1 (top-x-yon t) (* -1 (top-y-yon t))))
+      ((&gt;= (top-y t) 200) (make-top (top-x t) 199 (top-x-yon t) (* -1 (top-y-yon t))))
+      (else (make-top (+ (top-x t) (top-x-yon t)) (+ (top-y t) (top-y-yon t)) (top-x-yon t) (top-y-yon t)))))) 
+</code></pre>
+<p>Topun duvarlara çarpınca geri sekmesini, çarpmadığı zamanlarda ise x ve y koordunatlarındaki ivmelerine göre hareket etmesini istiyoruz.</p>
+<p>Dünyamızı çizmek için ise basitçe topu boş bir sahne üzerinde x ve y koordinatına yerleştirelim.</p>
+<pre><code>(: draw (top -&gt; image))
+
+(define draw
+  (lambda (t)
+    (place-image 
+     (circle 10 &quot;solid&quot; &quot;red&quot;)
+     (top-x t) (top-y t)
+     (empty-scene 200 200))))
+</code></pre>
+<p>Ve similasyonu baslatalim:</p>
+<pre><code>(big-bang
+    (make-top 0 200 8 8)
+  (on-tick tick)
+  (to-draw draw 200 200))
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ev-Ödevi-6"><a class="header" href="#ev-Ödevi-6">Ev Ödevi</a></h1>
+<p><code>big-bang</code> kullanarak 200x200 boyutunda bir sahnede yanyana ve aşağı doğru farklı ivmelerde hareket ederek yere çarptıklarında tekrar yukarı doğru geri zıplayan 2 tane top similasyonu yapalım. Toplardan biri mavi diğeri kırmızı olsun. Toplar ilk hareketlerine tepe noktasından (y=0) başlasınlar ve farklı ivmelerde hareket etsinler. En alt noktaya eriştiklerinde (y=200) tekrar geri zıplasınlar.</p>
+<p>İlk önce bu iş için bize gerekli olan minimal veri yapısını belirleyelim: Toplam kaç adet top olacak? Bu toplar her iki koordinatta mı yoksa sadece tek bir koordinatta mı hareket ediyorlar? Toplar aynı hızda mı hareket ediyorlar? Bu bilgileri kullanarak <code>top</code> için bir veri yapısı tasarlayalım.</p>
+<p>Her saat vurduğunda dünyamız nasıl değişecek? Topların bir sonraki hareketi nasıl olacak? Toplardan biri en alt noktaya ulaşırsa geri sekmesini nasıl sağlayacağız? Bu gibi durumları göz önünde bulundurarak bir <code>tick</code> fonksiyonu yazalım.</p>
+<p>Topların görüntüsünü sahneye nasıl çizeceğiz? <code>draw</code> fonksiyonunu yazarak 200x200'luk boş bir sahneye iki topu birden çizelim.</p>
+<p><code>big-bang</code> fonksiyonuna dünyamızın başlangıç durumunu, <code>on-tick</code> için yazdığımız <code>tick</code> fonksiyonunu ve <code>to-draw</code> için yazdığımız <code>draw</code> fonksiyonunu vererek similasyonumuzu çalıştıralım. </p>
+<pre><code>(big-bang
+ ...
+ (on-tick tick)
+ (to-draw draw)
+)
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ders-8"><a class="header" href="#ders-8">Ders 8</a></h1>
+<p>Bu dersimizde <code>big-bang</code> ile yaptığımız animasyonları klavye ve mouse kullanarak interaktif bir hale getireceğiz.</p>
+<p>Haydi başlayalım...</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ders-notları-7"><a class="header" href="#ders-notları-7">Ders Notları</a></h1>
+<pre><code>(define-record-procedures top
+  make-top
+  top?
+  (top-x
+   top-y))
+</code></pre>
+<pre><code>(: change (top string -&gt; top))
+
+(check-expect (change (make-top 100 100) &quot;left&quot;) (make-top 90 100))
+(check-expect (change (make-top 100 100) &quot;right&quot;) (make-top 110 100))
+(check-expect (change (make-top 100 100) &quot;up&quot;) (make-top 100 90))
+(check-expect (change (make-top 100 100) &quot;down&quot;) (make-top 100 110))
+(check-expect (change (make-top 0 200) &quot;r&quot;) (make-top 100 100))
+
+(define change
+  (lambda (t a-key)
+  (cond
+    [(key=? a-key &quot;left&quot;)  (make-top (- (top-x t) 10) (top-y t))]
+    [(key=? a-key &quot;right&quot;) (make-top (+ (top-x t) 10) (top-y t))]
+    [(key=? a-key &quot;up&quot;)    (make-top (top-x t) (- (top-y t) 10))]
+    [(key=? a-key &quot;down&quot;)  (make-top (top-x t) (+ (top-y t) 10))]
+    [(key=? a-key &quot;r&quot;)  (make-top 100 100)]
+    [else t])))
+</code></pre>
+<pre><code>(: jump (top integer integer string -&gt; top))
+
+(check-expect (jump (make-top 100 100) 50 60 &quot;drag&quot;) (make-top 50 60))
+(check-expect (jump (make-top 100 100) 50 60 &quot;move&quot;) (make-top 100 100))
+(check-expect (jump (make-top 100 100) 50 60 &quot;button-up&quot;) (make-top 100 100))
+(check-expect (jump (make-top 100 100) 50 60 &quot;button-down&quot;) (make-top 50 60))
+
+(define jump
+  (lambda (t x y m-event)
+    (cond
+      [(mouse=? m-event &quot;drag&quot;) (make-top x y)]
+      [(mouse=? m-event &quot;button-down&quot;) (make-top x y)] 
+      [else t])))
+</code></pre>
+<pre><code>(: draw (top -&gt; image))
+
+(check-expect (draw (make-top 100 100)) (place-image (circle 10 &quot;solid&quot; &quot;red&quot;) 100 100 (empty-scene 200 200)))
+
+(define draw
+  (lambda (t)
+    (place-image 
+     (circle 10 &quot;solid&quot; &quot;red&quot;)
+     (top-x t) (top-y t)
+     (empty-scene 200 200))))
+</code></pre>
+<pre><code>(big-bang
+    (make-top 100 100)
+  (on-key change)
+  (on-mouse jump)
+  (to-draw draw 200 200))
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ev-Ödevi-7"><a class="header" href="#ev-Ödevi-7">Ev Ödevi</a></h1>
+<p>TODO</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ders-9"><a class="header" href="#ders-9">Ders 9</a></h1>
+<p>Bu dersimizde yılan oyununu yazmak için ilk adımlarımızı atacağız. Basit bir veri yapısı ile başlayarak klavye ile yönünü tayin edebildiğimiz küçük bir böcek animasyonu yapacağız.</p>
+<p>Haydi başlayalım...</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ders-notları-8"><a class="header" href="#ders-notları-8">Ders Notları</a></h1>
+<pre><code>(define-record-procedures yılan
+  yılan-oluştur
+  (yılan-x
+   yılan-y
+   yılan-yön))
+
+(yılan-oluştur 0 0 &quot;sağ&quot;)
+(yılan-oluştur 100 50 &quot;sol&quot;)
+(yılan-oluştur 80 210 &quot;yukarı&quot;)
+(yılan-oluştur 0 75 &quot;aşağı&quot;)
+</code></pre>
+<pre><code>;; Bir yılan ve klavyeden basılan tuşu berlirten bir string alır. Eğer basılan tuş yön tuşlarından
+;; biri ise yılanın yönünü uygun bir şekilde değiştirir:
+;; &quot;up&quot; -&gt; &quot;yukarı&quot;
+;; &quot;down&quot; -&gt; &quot;aşağı&quot;
+;; &quot;left&quot; -&gt; &quot;sol&quot;
+;; &quot;right&quot; -&gt; &quot;sağ&quot;
+
+(: yön-değiştir (yılan string -&gt; yılan))
+
+(check-expect (yön-değiştir (yılan-oluştur 0 0 &quot;sağ&quot;) &quot;up&quot;)  (yılan-oluştur 0 0 &quot;yukarı&quot;))
+(check-expect (yön-değiştir (yılan-oluştur 100 50 &quot;yukarı&quot;) &quot;left&quot;)  (yılan-oluştur 100 50 &quot;sol&quot;))
+(check-expect (yön-değiştir (yılan-oluştur 80 20 &quot;sol&quot;) &quot;down&quot;)  (yılan-oluştur 80 20 &quot;aşağı&quot;))
+(check-expect (yön-değiştir (yılan-oluştur 10 90 &quot;aşağı&quot;) &quot;right&quot;)  (yılan-oluştur 10 90 &quot;sağ&quot;))
+(check-expect (yön-değiştir (yılan-oluştur 10 90 &quot;aşağı&quot;) &quot;up&quot;)  (yılan-oluştur 10 90 &quot;aşağı&quot;))
+(check-expect (yön-değiştir (yılan-oluştur 10 90 &quot;yukarı&quot;) &quot;down&quot;)  (yılan-oluştur 10 90 &quot;yukarı&quot;))
+(check-expect (yön-değiştir (yılan-oluştur 10 90 &quot;sol&quot;) &quot;right&quot;)  (yılan-oluştur 10 90 &quot;sol&quot;))
+(check-expect (yön-değiştir (yılan-oluştur 10 90 &quot;sağ&quot;) &quot;left&quot;)  (yılan-oluştur 10 90 &quot;sağ&quot;))
+
+(define yön-değiştir
+  (lambda (yln tuş)
+    (cond
+      [(and (key=? tuş &quot;left&quot;) (not (string=? (yılan-yön yln) &quot;sağ&quot;))) (yılan-oluştur (yılan-x yln) (yılan-y yln) &quot;sol&quot;)]
+      [(and (key=? tuş &quot;right&quot;) (not (string=? (yılan-yön yln) &quot;sol&quot;))) (yılan-oluştur (yılan-x yln) (yılan-y yln) &quot;sağ&quot;)]
+      [(and (key=? tuş &quot;up&quot;) (not (string=? (yılan-yön yln) &quot;aşağı&quot;))) (yılan-oluştur (yılan-x yln) (yılan-y yln) &quot;yukarı&quot;)]
+      [(and (key=? tuş &quot;down&quot;) (not (string=? (yılan-yön yln) &quot;yukarı&quot;))) (yılan-oluştur (yılan-x yln) (yılan-y yln) &quot;aşağı&quot;)]
+      [(key=? tuş &quot;r&quot;) (yılan-oluştur 50 50 &quot;sağ&quot;)]
+      [else yln])))
+</code></pre>
+<pre><code>;; Bir yılan alır ve 200x200 boyutlarında boş bir sahneye yılanın x ve y koordinatlarına gelecek sekilde
+;; 10x10 boyutlarında siyah içi dolu bir kare çizer.
+
+(: çiz (yılan -&gt; image))
+
+(check-expect (çiz (yılan-oluştur 100 100 &quot;sol&quot;)) (place-image (rectangle 10 10 &quot;solid&quot; &quot;black&quot;) 100 100 (empty-scene 200 200)))
+
+(define çiz
+  (lambda (yln)
+    (place-image 
+     (rectangle 10 10 &quot;solid&quot; &quot;black&quot;)
+     (yılan-x  yln) (yılan-y yln)
+     (empty-scene 200 200))))
+</code></pre>
+<pre><code>;; Bir yılan alır ve yılanın yönüne uygun bir şekilde bir sonraki sahnede nerede olması gerektiğini hesaplar.
+;; Bu hesap sonucunda oluşan yeni yılanı döner.
+
+(: ilerle (yılan -&gt; yılan))
+
+(check-expect (ilerle (yılan-oluştur 100 100 &quot;sağ&quot;)) (yılan-oluştur 105 100 &quot;sağ&quot;))
+(check-expect (ilerle (yılan-oluştur 100 100 &quot;sol&quot;)) (yılan-oluştur 95 100 &quot;sol&quot;))
+(check-expect (ilerle (yılan-oluştur 100 100 &quot;yukarı&quot;)) (yılan-oluştur 100 95 &quot;yukarı&quot;))
+(check-expect (ilerle (yılan-oluştur 100 100 &quot;aşağı&quot;)) (yılan-oluştur 100 105 &quot;aşağı&quot;))
+
+(define ilerle
+  (lambda (yln)
+    (cond
+      [(string=? (yılan-yön yln) &quot;sağ&quot;) (yılan-oluştur (+ (yılan-x yln) 5) (yılan-y yln) (yılan-yön yln))]
+      [(string=? (yılan-yön yln) &quot;sol&quot;) (yılan-oluştur (- (yılan-x yln) 5) (yılan-y yln) (yılan-yön yln))]
+      [(string=? (yılan-yön yln) &quot;yukarı&quot;) (yılan-oluştur (yılan-x yln) (- (yılan-y yln) 5) (yılan-yön yln))]
+      [(string=? (yılan-yön yln) &quot;aşağı&quot;) (yılan-oluştur (yılan-x yln) (+ (yılan-y yln) 5) (yılan-yön yln))]
+      [else yln])))
+</code></pre>
+<pre><code>;; Yılanı (50,100) noktasından yönü sağ tarafa doğru olacak sekilde yerleştirerek simulasyonu başlatır.
+(big-bang
+    (yılan-oluştur 50 100 &quot;sağ&quot;)
+  (on-key yön-değiştir)
+  (on-tick ilerle)
+  (to-draw çiz 200 200))
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ev-Ödevi-8"><a class="header" href="#ev-Ödevi-8">Ev Ödevi</a></h1>
+<ol>
+<li>Derste yaptığımız tek hücreli yılan animasyonumuz sahnenin kenarlarından çıktığında gitmeye devam ediyor, ancak biz göremiyoruz. Yılan sahnenin bir tarafından çıktığında diğer tarafından tekrar sahneye girmesini sağlayabilir misin? Yani sağ taraftan çıkarsa sol taraftan geri girecek. Ya da aşağıdan çıkarsa yukarıdan tekrar geri girecek.</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ders-10"><a class="header" href="#ders-10">Ders 10</a></h1>
+<p>Bu dersimizde geçen derste kaldığımız yerden devam ederek yılan duvara çarptığında oyunun bitmesini sağlayacağız. Ayrıca sahnenin rastgele bir noktasına yılanın yemesi için bir yem yerleştireceğiz.</p>
+<p>Haydi başlayalım...</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ders-notları-9"><a class="header" href="#ders-notları-9">Ders Notları</a></h1>
+<pre><code>(define-record-procedures yılan
+  yılan-oluştur
+  (yılan-x
+   yılan-y
+   yılan-yön
+   yem-x
+   yem-y))
+
+(yılan-oluştur 0 0 &quot;sağ&quot; 50 60)
+(yılan-oluştur 100 50 &quot;sol&quot; 20 50)
+(yılan-oluştur 80 210 &quot;yukarı&quot; 130 70)
+(yılan-oluştur 0 75 &quot;aşağı&quot; 20 50)
+</code></pre>
+<pre><code>;; Bir yılan ve klavyeden basılan tuşu berlirten bir string alır. Eğer basılan tuş yön tuşlarından
+;; biri ise yılanın yönünü uygun bir şekilde değiştirir:
+;; &quot;up&quot; -&gt; &quot;yukarı&quot;
+;; &quot;down&quot; -&gt; &quot;aşağı&quot;
+;; &quot;left&quot; -&gt; &quot;sol&quot;
+;; &quot;right&quot; -&gt; &quot;sağ&quot;
+
+(: yön-değiştir (yılan string -&gt; yılan))
+
+(check-expect (yön-değiştir (yılan-oluştur 0 0 &quot;sağ&quot; 0 0) &quot;up&quot;)  (yılan-oluştur 0 0 &quot;yukarı&quot; 0 0))
+(check-expect (yön-değiştir (yılan-oluştur 100 50 &quot;yukarı&quot; 0 0) &quot;left&quot;)  (yılan-oluştur 100 50 &quot;sol&quot; 0 0))
+(check-expect (yön-değiştir (yılan-oluştur 80 20 &quot;sol&quot; 0 0) &quot;down&quot;)  (yılan-oluştur 80 20 &quot;aşağı&quot; 0 0))
+(check-expect (yön-değiştir (yılan-oluştur 10 90 &quot;aşağı&quot; 0 0) &quot;right&quot;)  (yılan-oluştur 10 90 &quot;sağ&quot; 0 0))
+(check-expect (yön-değiştir (yılan-oluştur 10 90 &quot;aşağı&quot; 0 0) &quot;up&quot;)  (yılan-oluştur 10 90 &quot;aşağı&quot; 0 0))
+(check-expect (yön-değiştir (yılan-oluştur 10 90 &quot;yukarı&quot; 0 0) &quot;down&quot;)  (yılan-oluştur 10 90 &quot;yukarı&quot; 0 0))
+(check-expect (yön-değiştir (yılan-oluştur 10 90 &quot;sol&quot; 0 0) &quot;right&quot;)  (yılan-oluştur 10 90 &quot;sol&quot; 0 0))
+(check-expect (yön-değiştir (yılan-oluştur 10 90 &quot;sağ&quot; 0 0) &quot;left&quot;)  (yılan-oluştur 10 90 &quot;sağ&quot; 0 0))
+
+(define yön-değiştir
+  (lambda (yln tuş)
+    (cond
+      [(and (key=? tuş &quot;left&quot;) (not (string=? (yılan-yön yln) &quot;sağ&quot;))) (yılan-oluştur (yılan-x yln) (yılan-y yln) &quot;sol&quot; (yem-x yln) (yem-y yln))]
+      [(and (key=? tuş &quot;right&quot;) (not (string=? (yılan-yön yln) &quot;sol&quot;))) (yılan-oluştur (yılan-x yln) (yılan-y yln) &quot;sağ&quot; (yem-x yln) (yem-y yln))]
+      [(and (key=? tuş &quot;up&quot;) (not (string=? (yılan-yön yln) &quot;aşağı&quot;))) (yılan-oluştur (yılan-x yln) (yılan-y yln) &quot;yukarı&quot; (yem-x yln) (yem-y yln))]
+      [(and (key=? tuş &quot;down&quot;) (not (string=? (yılan-yön yln) &quot;yukarı&quot;))) (yılan-oluştur (yılan-x yln) (yılan-y yln) &quot;aşağı&quot; (yem-x yln) (yem-y yln))]
+      [(key=? tuş &quot;r&quot;) (yılan-oluştur 50 50 &quot;sağ&quot; (yem-x yln) (yem-y yln))]
+      [else yln])))
+</code></pre>
+<pre><code>;; Bir yılan alır ve 200x200 boyutlarında boş bir sahneye yılanın x ve y koordinatlarına gelecek sekilde
+;; 10x10 boyutlarında siyah içi dolu bir kare çizer.
+
+(: çiz (yılan -&gt; image))
+
+(check-expect (çiz (yılan-oluştur 100 100 &quot;sol&quot; 50 50)) (place-image (rectangle 10 10 &quot;solid&quot; &quot;red&quot;) 50 50 (place-image (rectangle 10 10 &quot;solid&quot; &quot;black&quot;) 100 100 (empty-scene 200 200))))
+
+(define çiz
+  (lambda (yln)
+    (place-image
+     (rectangle 10 10 &quot;solid&quot; &quot;red&quot;)
+     (yem-x yln) (yem-y yln)
+     (place-image 
+      (rectangle 10 10 &quot;solid&quot; &quot;black&quot;)
+      (yılan-x  yln) (yılan-y yln)
+      (empty-scene 200 200)))))
+</code></pre>
+<pre><code>;; Bir yılan alır ve yılanın yönüne uygun bir şekilde bir sonraki sahnede nerede olması gerektiğini hesaplar.
+;; Bu hesap sonucunda oluşan yeni yılanı döner.
+
+(: ilerle (yılan -&gt; yılan))
+
+(check-expect (ilerle (yılan-oluştur 100 100 &quot;sağ&quot; 0 0)) (yılan-oluştur 110 100 &quot;sağ&quot; 0 0))
+(check-expect (ilerle (yılan-oluştur 100 100 &quot;sol&quot; 0 0)) (yılan-oluştur 90 100 &quot;sol&quot; 0 0))
+(check-expect (ilerle (yılan-oluştur 100 100 &quot;yukarı&quot; 0 0)) (yılan-oluştur 100 90 &quot;yukarı&quot; 0 0))
+(check-expect (ilerle (yılan-oluştur 100 100 &quot;aşağı&quot; 0 0)) (yılan-oluştur 100 110 &quot;aşağı&quot; 0 0))
+
+(define ilerle
+  (lambda (yln)
+    (cond
+      [(string=? (yılan-yön yln) &quot;sağ&quot;) (yılan-oluştur (+ (yılan-x yln) 10) (yılan-y yln) (yılan-yön yln) (yem-x yln) (yem-y yln))]
+      [(string=? (yılan-yön yln) &quot;sol&quot;) (yılan-oluştur (- (yılan-x yln) 10) (yılan-y yln) (yılan-yön yln) (yem-x yln) (yem-y yln))]
+      [(string=? (yılan-yön yln) &quot;yukarı&quot;) (yılan-oluştur (yılan-x yln) (- (yılan-y yln) 10) (yılan-yön yln) (yem-x yln) (yem-y yln))]
+      [(string=? (yılan-yön yln) &quot;aşağı&quot;) (yılan-oluştur (yılan-x yln) (+ (yılan-y yln) 10) (yılan-yön yln) (yem-x yln) (yem-y yln))]
+      [else yln])))
+</code></pre>
+<pre><code>;; Bir yılanın alır ve koordinatlarını kontrol eder. Eger yılan sahnenin dışına çıktı ise #true döner. Aksi takdirde #false döner.
+
+(: oyun-bitti? (yılan -&gt; boolean))
+
+(check-expect (oyun-bitti? (yılan-oluştur 100 100 &quot;sağ&quot; 0 0)) #f)
+(check-expect (oyun-bitti? (yılan-oluştur 201 100 &quot;sağ&quot; 0 0)) #t)
+(check-expect (oyun-bitti? (yılan-oluştur 100 201 &quot;sağ&quot; 0 0)) #t)
+(check-expect (oyun-bitti? (yılan-oluştur 300 100 &quot;sol&quot; 0 0)) #t)
+
+(define oyun-bitti?
+  (lambda (yln)
+    (cond
+      [(&lt; (yılan-x yln) 5) #t]
+      [(&gt; (yılan-x yln) 195) #t]
+      [(&lt; (yılan-y yln) 5) #t]
+      [(&gt; (yılan-y yln) 195) #t]
+      [else #f])))
+</code></pre>
+<pre><code>;; Bir yılan alır ve oyunun son sahnesini gösteren bir resim döner.
+
+(: son-sahne (yılan -&gt; image))
+
+(check-expect (son-sahne (yılan-oluştur 201 100 &quot;sağ&quot; 0 0)) (place-image (text &quot;Oyun Bitti!&quot; 30 &quot;red&quot;) 100 100 (empty-scene 200 200)))
+
+(define son-sahne
+  (lambda (yln)
+    (place-image (text &quot;Oyun Bitti!&quot; 30 &quot;red&quot;) 100 100 (empty-scene 200 200))))
+</code></pre>
+<pre><code>;; 5,15,25...195 sayılarından birini rastgele olarak seçer ve döner.
+
+(: rastgele integer)
+
+(define rastgele (+ 5 (* (random 20) 10)))
+</code></pre>
+<pre><code>;; Yılanı (50,100) noktasından yönü sağ tarafa doğru olacak sekilde yerleştirerek simulasyonu başlatır.
+
+(big-bang
+    (yılan-oluştur 5 5 &quot;sağ&quot; rastgele rastgele)
+  (on-key yön-değiştir)
+  (on-tick ilerle 0.1)
+  (stop-when oyun-bitti? son-sahne)
+  (to-draw çiz 200 200))
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ev-Ödevi-9"><a class="header" href="#ev-Ödevi-9">Ev Ödevi</a></h1>
+<ol>
+<li>
+<p>Bu seferki ödevimiz düşünme ödevi. Elimizdeki veri yapısı ile şu anda sadece yılanın baş kısmını temsil edebiliyoruz. Peki ya kuyruğu? Yılanın baş kısmı ilerledikçe kuyruğun takip etmesini nasıl sağlayacağız? Bu konuyu düşünelim ve bir sonraki derste tartışalım.</p>
+</li>
+<li>
+<p>Yılan'ın yemesi için ekranda rastgele bir noktada yem çıkarıyoruz. Ancak bu yem yılanın tam üstünde de belirebilir. Bunu istemeyiz. Yemin yılanın üzerinde belirmemesini sağlayabilir misin? Bunun için rastgele ürettiğin noktayı kontrol edip eğer yılanın üzerine denk geldi ise tekrar üretmeyi deneyebilirsin.</p>
+</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ders-11"><a class="header" href="#ders-11">Ders 11</a></h1>
+<p>Bir önceki dersimizde yılanı sadece tek bir kare olarak temsil etmiştik. Henüz bir kuyruğu yoktu. Bu dersimizde yılanın kuyruk kısmını da hareket ettireceğiz. Baş kısmı ilerledikçe kuyruğu onu takip edecek.</p>
+<p>Haydi başlayalım.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ders-notları-10"><a class="header" href="#ders-notları-10">Ders Notları</a></h1>
+<pre><code>;; x ve y koordinatlarını tanımlar
+(define-record-procedures koor
+  koor-oluştur
+  (koor-x
+   koor-y))
+
+(koor-oluştur 50 60)
+(koor-oluştur 20 70)
+</code></pre>
+<pre><code>;; Yılan oyunu için gerekli veri yapısını tanımlar
+(define-record-procedures yılan
+  yılan-oluştur
+  (yılan-gövde
+   yılan-yön
+   yem-x
+   yem-y))
+
+(yılan-oluştur (cons (koor-oluştur 100 20) empty)  &quot;sağ&quot; 50 60)
+(yılan-oluştur (cons (koor-oluştur 100 50) (cons (koor-oluştur 100 20) empty)) &quot;sol&quot; 20 50)
+(yılan-oluştur empty &quot;yukarı&quot; 130 70)
+(yılan-oluştur (cons (koor-oluştur 100 50) (cons (koor-oluştur 100 20) (cons (koor-oluştur 0 75) empty))) &quot;aşağı&quot; 20 50)
+</code></pre>
+<pre><code>;; Bir yılan ve klavyeden basılan tuşu berlirten bir string alır. Eğer basılan tuş yön tuşlarından
+;; biri ise yılanın yönünü uygun bir şekilde değiştirir:
+;; &quot;up&quot; -&gt; &quot;yukarı&quot;
+;; &quot;down&quot; -&gt; &quot;aşağı&quot;
+;; &quot;left&quot; -&gt; &quot;sol&quot;
+;; &quot;right&quot; -&gt; &quot;sağ&quot;
+
+(: yön-değiştir (yılan string -&gt; yılan))
+
+(check-expect (yön-değiştir (yılan-oluştur (cons (koor-oluştur 0 0) empty) &quot;sağ&quot; 0 0) &quot;up&quot;)  (yılan-oluştur (cons (koor-oluştur 0 0) empty) &quot;yukarı&quot; 0 0))
+(check-expect (yön-değiştir (yılan-oluştur (cons (koor-oluştur 0 0) empty) &quot;yukarı&quot; 0 0) &quot;left&quot;)  (yılan-oluştur (cons (koor-oluştur 0 0) empty) &quot;sol&quot; 0 0))
+(check-expect (yön-değiştir (yılan-oluştur empty &quot;sol&quot; 0 0) &quot;down&quot;)  (yılan-oluştur empty &quot;aşağı&quot; 0 0))
+(check-expect (yön-değiştir (yılan-oluştur empty &quot;aşağı&quot; 0 0) &quot;right&quot;)  (yılan-oluştur empty &quot;sağ&quot; 0 0))
+(check-expect (yön-değiştir (yılan-oluştur empty &quot;aşağı&quot; 0 0) &quot;up&quot;)  (yılan-oluştur empty &quot;aşağı&quot; 0 0))
+(check-expect (yön-değiştir (yılan-oluştur empty &quot;yukarı&quot; 0 0) &quot;down&quot;)  (yılan-oluştur empty &quot;yukarı&quot; 0 0))
+(check-expect (yön-değiştir (yılan-oluştur empty &quot;sol&quot; 0 0) &quot;right&quot;)  (yılan-oluştur empty &quot;sol&quot; 0 0))
+(check-expect (yön-değiştir (yılan-oluştur empty &quot;sağ&quot; 0 0) &quot;left&quot;)  (yılan-oluştur empty &quot;sağ&quot; 0 0))
+
+(define yön-değiştir
+  (lambda (yln tuş)
+    (cond
+      [(and (key=? tuş &quot;left&quot;) (not (string=? (yılan-yön yln) &quot;sağ&quot;))) (yılan-oluştur (yılan-gövde yln) &quot;sol&quot; (yem-x yln) (yem-y yln))]
+      [(and (key=? tuş &quot;right&quot;) (not (string=? (yılan-yön yln) &quot;sol&quot;))) (yılan-oluştur (yılan-gövde yln) &quot;sağ&quot; (yem-x yln) (yem-y yln))]
+      [(and (key=? tuş &quot;up&quot;) (not (string=? (yılan-yön yln) &quot;aşağı&quot;))) (yılan-oluştur (yılan-gövde yln) &quot;yukarı&quot; (yem-x yln) (yem-y yln))]
+      [(and (key=? tuş &quot;down&quot;) (not (string=? (yılan-yön yln) &quot;yukarı&quot;))) (yılan-oluştur (yılan-gövde yln) &quot;aşağı&quot; (yem-x yln) (yem-y yln))]
+      [else yln])))
+</code></pre>
+<pre><code>;; Bir yılan alır ve 200x200 boyutlarında boş bir sahneye yılanın x ve y koordinatlarına gelecek sekilde
+;; 10x10 boyutlarında siyah içi dolu bir kare çizer.
+
+(: çiz (yılan -&gt; image))
+
+(check-expect (çiz (yılan-oluştur empty &quot;sol&quot; 50 50)) (place-image (rectangle 10 10 &quot;solid&quot; &quot;red&quot;) 50 50 (empty-scene 200 200)))
+(check-expect (çiz (yılan-oluştur (cons (koor-oluştur 50 50) (cons (koor-oluştur 100 100) empty)) &quot;sol&quot; 50 50)) (place-image (rectangle 10 10 &quot;solid&quot; &quot;red&quot;) 50 50 (place-image (rectangle 10 10 &quot;solid&quot; &quot;black&quot;) 100 100 (empty-scene 200 200))))
+
+(define çiz
+  (lambda (yln)
+    (place-image
+     (rectangle 10 10 &quot;solid&quot; &quot;red&quot;)
+     (yem-x yln) (yem-y yln)
+     (yılan-çiz (yılan-gövde yln)))))
+</code></pre>
+<pre><code>;; Bir koor listesi alır ve 200x200 boyutlarinda bir sahneye çizer
+
+(: yılan-çiz ((list-of koor)  -&gt; image))
+
+(check-expect (yılan-çiz empty) (empty-scene 200 200))
+(check-expect (yılan-çiz (cons (koor-oluştur 50 50) empty)) (place-image (rectangle 10 10 &quot;solid&quot; &quot;black&quot;) 50 50 (empty-scene 200 200)))
+(check-expect (yılan-çiz (cons (koor-oluştur 50 50) (cons (koor-oluştur 40 50) empty))) (place-image (rectangle 10 10 &quot;solid&quot; &quot;black&quot;) 40 50 (place-image (rectangle 10 10 &quot;solid&quot; &quot;black&quot;) 50 50 (empty-scene 200 200))))
+
+(define yılan-çiz
+  (lambda (gövde)
+    (cond
+     [(empty? gövde) (empty-scene 200 200)]
+     [else (place-image (rectangle 10 10 &quot;solid&quot; &quot;black&quot;) (koor-x (first gövde)) (koor-y (first gövde)) (yılan-çiz (rest gövde)))])))
+</code></pre>
+<pre><code>;; Bir liste alir ve son elemanını silerek yeni bir liste döner
+
+(: son-elemanı-sil ((list-of koor) -&gt; (list-of koor)))
+
+(check-expect (son-elemanı-sil empty) empty)
+(check-expect (son-elemanı-sil (cons (koor-oluştur 100 100) empty)) empty)
+(check-expect (son-elemanı-sil (cons (koor-oluştur 100 100) (cons (koor-oluştur 110 100) empty))) (cons (koor-oluştur 100 100) empty))
+
+(define son-elemanı-sil
+  (lambda (lst)
+    (cond
+     [(empty? lst) empty]
+     [(empty? (rest lst)) empty]
+     [else (cons (first lst) (son-elemanı-sil (rest lst)))])))
+</code></pre>
+<pre><code>;; Bir yılan alır ve yılanın yönüne uygun bir şekilde bir sonraki sahnede nerede olması gerektiğini hesaplar.
+;; Bu hesap sonucunda oluşan yeni yılanı döner.
+
+(: ilerle (yılan -&gt; yılan))
+
+(check-expect (ilerle (yılan-oluştur empty &quot;sağ&quot; 0 0)) (yılan-oluştur empty &quot;sağ&quot; 0 0))
+(check-expect (ilerle (yılan-oluştur (cons (koor-oluştur 100 100) empty) &quot;sağ&quot; 0 0)) (yılan-oluştur (cons (koor-oluştur 110 100) empty) &quot;sağ&quot; 0 0))
+(check-expect (ilerle (yılan-oluştur (cons (koor-oluştur 100 100) (cons (koor-oluştur 90 100) empty)) &quot;sağ&quot; 0 0)) (yılan-oluştur (cons (koor-oluştur 110 100) (cons (koor-oluştur 100 100) empty)) &quot;sağ&quot; 0 0))
+
+(define ilerle
+  (lambda (yln)
+    (cond
+      [(empty? (yılan-gövde yln)) yln]
+      [(string=? (yılan-yön yln) &quot;sağ&quot;) (yılan-oluştur (cons (koor-oluştur (+ (koor-x (first (yılan-gövde yln))) 10)  (koor-y (first (yılan-gövde yln)))) (son-elemanı-sil (yılan-gövde yln))) (yılan-yön yln) (yem-x yln) (yem-y yln))]
+      [(string=? (yılan-yön yln) &quot;sol&quot;) (yılan-oluştur (cons (koor-oluştur (- (koor-x (first (yılan-gövde yln))) 10)  (koor-y (first (yılan-gövde yln)))) (son-elemanı-sil (yılan-gövde yln))) (yılan-yön yln) (yem-x yln) (yem-y yln))]
+      [(string=? (yılan-yön yln) &quot;yukarı&quot;) (yılan-oluştur (cons (koor-oluştur (koor-x (first (yılan-gövde yln)))  (- (koor-y (first (yılan-gövde yln))) 10)) (son-elemanı-sil (yılan-gövde yln))) (yılan-yön yln) (yem-x yln) (yem-y yln))]
+      [(string=? (yılan-yön yln) &quot;aşağı&quot;) (yılan-oluştur (cons (koor-oluştur (koor-x (first (yılan-gövde yln)))  (+ (koor-y (first (yılan-gövde yln))) 10)) (son-elemanı-sil (yılan-gövde yln))) (yılan-yön yln) (yem-x yln) (yem-y yln))]
+      [else yln])))
+</code></pre>
+<pre><code>;; Bir yılanın alır ve koordinatlarını kontrol eder. Eger yılan sahnenin dışına çıktı ise #true döner. Aksi takdirde #false döner.
+
+(: oyun-bitti? (yılan -&gt; boolean))
+
+(check-expect (oyun-bitti? (yılan-oluştur (cons (koor-oluştur 100 100) empty) &quot;sağ&quot; 0 0)) #f)
+(check-expect (oyun-bitti? (yılan-oluştur (cons (koor-oluştur 201 100) empty) &quot;sağ&quot; 0 0)) #t)
+(check-expect (oyun-bitti? (yılan-oluştur (cons (koor-oluştur 100 201) empty) &quot;sağ&quot; 0 0)) #t)
+(check-expect (oyun-bitti? (yılan-oluştur (cons (koor-oluştur 300 100) empty) &quot;sol&quot; 0 0)) #t)
+
+(define oyun-bitti?
+  (lambda (yln)
+    (cond
+      [(&lt; (koor-x (first (yılan-gövde yln))) 5) #t]
+      [(&gt; (koor-x (first (yılan-gövde yln))) 195) #t]
+      [(&lt; (koor-y (first (yılan-gövde yln))) 5) #t]
+      [(&gt; (koor-y (first (yılan-gövde yln))) 195) #t]
+      [else #f])))
+</code></pre>
+<pre><code>;; Bir yılan alır ve oyunun son sahnesini gösteren bir resim döner.
+
+(: son-sahne (yılan -&gt; image))
+
+(check-expect (son-sahne (yılan-oluştur (cons (koor-oluştur 201 100) empty) &quot;sağ&quot; 0 0)) (place-image (text &quot;Oyun Bitti!&quot; 30 &quot;red&quot;) 100 100 (empty-scene 200 200)))
+
+(define son-sahne
+  (lambda (yln)
+    (place-image (text &quot;Oyun Bitti!&quot; 30 &quot;red&quot;) 100 100 (empty-scene 200 200))))
+</code></pre>
+<pre><code>;; 5,15,25...195 sayılarından birini rastgele olarak seçer ve döner.
+
+(: rastgele integer)
+
+(define rastgele (+ 5 (* (random 20) 10)))
+</code></pre>
+<pre><code>;; Yılanı (50,100) noktasından yönü sağ tarafa doğru olacak sekilde yerleştirerek simulasyonu başlatır.
+
+(big-bang
+    (yılan-oluştur (cons (koor-oluştur 15 5) (cons (koor-oluştur 5 5) empty)) &quot;sağ&quot; rastgele rastgele)
+  (on-key yön-değiştir)
+  (on-tick ilerle 0.1)
+  (stop-when oyun-bitti? son-sahne)
+  (to-draw çiz 200 200))
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ev-Ödevi-10"><a class="header" href="#ev-Ödevi-10">Ev Ödevi</a></h1>
+<p>TODO</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ders-12"><a class="header" href="#ders-12">Ders 12</a></h1>
+<p>Kaldığımız yerden devam ediyoruz. Yılan yemi yediğinde hem uzamalı, hem de yem rastgele bir noktada tekrar belirmeli.</p>
+<p>Haydi başlayalım...</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ders-notları-11"><a class="header" href="#ders-notları-11">Ders Notları</a></h1>
+<pre><code>;; x ve y koordinatlarını tanımlar
+(define-record-procedures koor
+  koor-oluştur
+  (koor-x
+   koor-y))
+
+(koor-oluştur 50 60)
+(koor-oluştur 20 70)
+</code></pre>
+<pre><code>;; Yılan oyunu için gerekli veri yapısını tanımlar
+(define-record-procedures yılan
+  yılan-oluştur
+  (yılan-gövde
+   yılan-yön
+   yem-x
+   yem-y))
+
+(yılan-oluştur (cons (koor-oluştur 100 20) empty)  &quot;sağ&quot; 50 60)
+(yılan-oluştur (cons (koor-oluştur 100 50) (cons (koor-oluştur 100 20) empty)) &quot;sol&quot; 20 50)
+(yılan-oluştur empty &quot;yukarı&quot; 130 70)
+(yılan-oluştur (cons (koor-oluştur 100 50) (cons (koor-oluştur 100 20) (cons (koor-oluştur 0 75) empty))) &quot;aşağı&quot; 20 50)
+</code></pre>
+<pre><code>;; Bir yılan ve klavyeden basılan tuşu berlirten bir string alır. Eğer basılan tuş yön tuşlarından
+;; biri ise yılanın yönünü uygun bir şekilde değiştirir:
+;; &quot;up&quot; -&gt; &quot;yukarı&quot;
+;; &quot;down&quot; -&gt; &quot;aşağı&quot;
+;; &quot;left&quot; -&gt; &quot;sol&quot;
+;; &quot;right&quot; -&gt; &quot;sağ&quot;
+
+(: yön-değiştir (yılan string -&gt; yılan))
+
+(check-expect (yön-değiştir (yılan-oluştur (cons (koor-oluştur 0 0) empty) &quot;sağ&quot; 0 0) &quot;up&quot;)  (yılan-oluştur (cons (koor-oluştur 0 0) empty) &quot;yukarı&quot; 0 0))
+(check-expect (yön-değiştir (yılan-oluştur (cons (koor-oluştur 0 0) empty) &quot;yukarı&quot; 0 0) &quot;left&quot;)  (yılan-oluştur (cons (koor-oluştur 0 0) empty) &quot;sol&quot; 0 0))
+(check-expect (yön-değiştir (yılan-oluştur empty &quot;sol&quot; 0 0) &quot;down&quot;)  (yılan-oluştur empty &quot;aşağı&quot; 0 0))
+(check-expect (yön-değiştir (yılan-oluştur empty &quot;aşağı&quot; 0 0) &quot;right&quot;)  (yılan-oluştur empty &quot;sağ&quot; 0 0))
+(check-expect (yön-değiştir (yılan-oluştur empty &quot;aşağı&quot; 0 0) &quot;up&quot;)  (yılan-oluştur empty &quot;aşağı&quot; 0 0))
+(check-expect (yön-değiştir (yılan-oluştur empty &quot;yukarı&quot; 0 0) &quot;down&quot;)  (yılan-oluştur empty &quot;yukarı&quot; 0 0))
+(check-expect (yön-değiştir (yılan-oluştur empty &quot;sol&quot; 0 0) &quot;right&quot;)  (yılan-oluştur empty &quot;sol&quot; 0 0))
+(check-expect (yön-değiştir (yılan-oluştur empty &quot;sağ&quot; 0 0) &quot;left&quot;)  (yılan-oluştur empty &quot;sağ&quot; 0 0))
+
+(define yön-değiştir
+  (lambda (yln tuş)
+    (cond
+      [(and (key=? tuş &quot;left&quot;) (not (string=? (yılan-yön yln) &quot;sağ&quot;))) (yılan-oluştur (yılan-gövde yln) &quot;sol&quot; (yem-x yln) (yem-y yln))]
+      [(and (key=? tuş &quot;right&quot;) (not (string=? (yılan-yön yln) &quot;sol&quot;))) (yılan-oluştur (yılan-gövde yln) &quot;sağ&quot; (yem-x yln) (yem-y yln))]
+      [(and (key=? tuş &quot;up&quot;) (not (string=? (yılan-yön yln) &quot;aşağı&quot;))) (yılan-oluştur (yılan-gövde yln) &quot;yukarı&quot; (yem-x yln) (yem-y yln))]
+      [(and (key=? tuş &quot;down&quot;) (not (string=? (yılan-yön yln) &quot;yukarı&quot;))) (yılan-oluştur (yılan-gövde yln) &quot;aşağı&quot; (yem-x yln) (yem-y yln))]
+      [else yln])))
+</code></pre>
+<pre><code>;; Bir yılan alır ve 200x200 boyutlarında boş bir sahneye yılanın x ve y koordinatlarına gelecek sekilde
+;; 10x10 boyutlarında siyah içi dolu bir kare çizer.
+
+(: çiz (yılan -&gt; image))
+
+(check-expect (çiz (yılan-oluştur empty &quot;sol&quot; 50 50)) (place-image (rectangle 10 10 &quot;solid&quot; &quot;red&quot;) 50 50 (empty-scene 200 200)))
+(check-expect (çiz (yılan-oluştur (cons (koor-oluştur 50 50) (cons (koor-oluştur 100 100) empty)) &quot;sol&quot; 50 50)) (place-image (rectangle 10 10 &quot;solid&quot; &quot;red&quot;) 50 50 (place-image (rectangle 10 10 &quot;solid&quot; &quot;black&quot;) 100 100 (empty-scene 200 200))))
+
+(define çiz
+  (lambda (yln)
+    (place-image
+     (rectangle 10 10 &quot;solid&quot; &quot;red&quot;)
+     (yem-x yln) (yem-y yln)
+     (yılan-çiz (yılan-gövde yln)))))
+</code></pre>
+<pre><code>;; Bir koor listesi alır ve 200x200 boyutlarinda bir sahneye çizer
+
+(: yılan-çiz ((list-of koor)  -&gt; image))
+
+(check-expect (yılan-çiz empty) (empty-scene 200 200))
+(check-expect (yılan-çiz (cons (koor-oluştur 50 50) empty)) (place-image (rectangle 10 10 &quot;solid&quot; &quot;black&quot;) 50 50 (empty-scene 200 200)))
+(check-expect (yılan-çiz (cons (koor-oluştur 50 50) (cons (koor-oluştur 40 50) empty))) (place-image (rectangle 10 10 &quot;solid&quot; &quot;black&quot;) 40 50 (place-image (rectangle 10 10 &quot;solid&quot; &quot;black&quot;) 50 50 (empty-scene 200 200))))
+
+(define yılan-çiz
+  (lambda (gövde)
+    (cond
+     [(empty? gövde) (empty-scene 200 200)]
+     [else (place-image (rectangle 10 10 &quot;solid&quot; &quot;black&quot;) (koor-x (first gövde)) (koor-y (first gövde)) (yılan-çiz (rest gövde)))])))
+</code></pre>
+<pre><code>;; Bir liste alir ve son elemanını silerek yeni bir liste döner
+
+(: son-elemanı-sil ((list-of koor) -&gt; (list-of koor)))
+
+(check-expect (son-elemanı-sil empty) empty)
+(check-expect (son-elemanı-sil (cons (koor-oluştur 100 100) empty)) empty)
+(check-expect (son-elemanı-sil (cons (koor-oluştur 100 100) (cons (koor-oluştur 110 100) empty))) (cons (koor-oluştur 100 100) empty))
+
+(define son-elemanı-sil
+  (lambda (lst)
+    (cond
+     [(empty? lst) empty]
+     [(empty? (rest lst)) empty]
+     [else (cons (first lst) (son-elemanı-sil (rest lst)))])))
+</code></pre>
+<pre><code>;; Bir yılan alır ve yılanın yönüne uygun bir şekilde bir sonraki sahnede nerede olması gerektiğini hesaplar.
+;; Bu hesap sonucunda oluşan yeni yılanı döner.
+
+(: ilerle (yılan -&gt; yılan))
+
+(check-expect (ilerle (yılan-oluştur empty &quot;sağ&quot; 0 0)) (yılan-oluştur empty &quot;sağ&quot; 0 0))
+(check-expect (ilerle (yılan-oluştur (cons (koor-oluştur 100 100) empty) &quot;sağ&quot; 0 0)) (yılan-oluştur (cons (koor-oluştur 110 100) empty) &quot;sağ&quot; 0 0))
+(check-expect (ilerle (yılan-oluştur (cons (koor-oluştur 100 100) (cons (koor-oluştur 90 100) empty)) &quot;sağ&quot; 0 0)) (yılan-oluştur (cons (koor-oluştur 110 100) (cons (koor-oluştur 100 100) empty)) &quot;sağ&quot; 0 0))
+
+(define ilerle
+  (lambda (yln)
+    (cond
+      [(empty? (yılan-gövde yln)) yln]
+      [(string=? (yılan-yön yln) &quot;sağ&quot;) (yılan-oluştur (cons (koor-oluştur (+ (koor-x (first (yılan-gövde yln))) 10)  (koor-y (first (yılan-gövde yln)))) (son-elemanı-sil (yılan-gövde yln))) (yılan-yön yln) (yem-x yln) (yem-y yln))]
+      [(string=? (yılan-yön yln) &quot;sol&quot;) (yılan-oluştur (cons (koor-oluştur (- (koor-x (first (yılan-gövde yln))) 10)  (koor-y (first (yılan-gövde yln)))) (son-elemanı-sil (yılan-gövde yln))) (yılan-yön yln) (yem-x yln) (yem-y yln))]
+      [(string=? (yılan-yön yln) &quot;yukarı&quot;) (yılan-oluştur (cons (koor-oluştur (koor-x (first (yılan-gövde yln)))  (- (koor-y (first (yılan-gövde yln))) 10)) (son-elemanı-sil (yılan-gövde yln))) (yılan-yön yln) (yem-x yln) (yem-y yln))]
+      [(string=? (yılan-yön yln) &quot;aşağı&quot;) (yılan-oluştur (cons (koor-oluştur (koor-x (first (yılan-gövde yln)))  (+ (koor-y (first (yılan-gövde yln))) 10)) (son-elemanı-sil (yılan-gövde yln))) (yılan-yön yln) (yem-x yln) (yem-y yln))]
+      [else yln])))
+</code></pre>
+<pre><code>;; Bir yılanın alır ve koordinatlarını kontrol eder. Eger yılan sahnenin dışına çıktı ise #true döner. Aksi takdirde #false döner.
+
+(: oyun-bitti? (yılan -&gt; boolean))
+
+(check-expect (oyun-bitti? (yılan-oluştur (cons (koor-oluştur 100 100) empty) &quot;sağ&quot; 0 0)) #f)
+(check-expect (oyun-bitti? (yılan-oluştur (cons (koor-oluştur 201 100) empty) &quot;sağ&quot; 0 0)) #t)
+(check-expect (oyun-bitti? (yılan-oluştur (cons (koor-oluştur 100 201) empty) &quot;sağ&quot; 0 0)) #t)
+(check-expect (oyun-bitti? (yılan-oluştur (cons (koor-oluştur 300 100) empty) &quot;sol&quot; 0 0)) #t)
+
+(define oyun-bitti?
+  (lambda (yln)
+    (cond
+      [(&lt; (koor-x (first (yılan-gövde yln))) 5) #t]
+      [(&gt; (koor-x (first (yılan-gövde yln))) 195) #t]
+      [(&lt; (koor-y (first (yılan-gövde yln))) 5) #t]
+      [(&gt; (koor-y (first (yılan-gövde yln))) 195) #t]
+      [else #f])))
+</code></pre>
+<pre><code>;; Bir yılan alır ve oyunun son sahnesini gösteren bir resim döner.
+
+(: son-sahne (yılan -&gt; image))
+
+(check-expect (son-sahne (yılan-oluştur (cons (koor-oluştur 201 100) empty) &quot;sağ&quot; 0 0)) (place-image (text &quot;Oyun Bitti!&quot; 30 &quot;red&quot;) 100 100 (empty-scene 200 200)))
+
+(define son-sahne
+  (lambda (yln)
+    (place-image (text &quot;Oyun Bitti!&quot; 30 &quot;red&quot;) 100 100 (empty-scene 200 200))))
+</code></pre>
+<pre><code>;; 5,15,25...195 sayılarından birini rastgele olarak seçer ve döner.
+
+(: rastgele integer)
+
+(define rastgele (+ 5 (* (random 20) 10)))
+</code></pre>
+<pre><code>;; Yılanın yemi yeyip yemedigini soöyler. Eğer yilanin ilk karesinin (baş kısmının) koordinatları
+;; yemin koordinatları ile üst üste gelirse (aynı olursa) #true döner. Aksi halde #false döner.
+
+(: yemi-yedi-mi? (yılan -&gt; boolean))
+
+(check-expect (yemi-yedi-mi? (yılan-oluştur empty &quot;sağ&quot; 100 200)) #false)
+(check-expect (yemi-yedi-mi? (yılan-oluştur (cons (koor-oluştur 15 5) (cons (koor-oluştur 5 5) empty)) &quot;sağ&quot; 100 200)) #false)
+(check-expect (yemi-yedi-mi? (yılan-oluştur (cons (koor-oluştur 15 5) (cons (koor-oluştur 5 5) empty)) &quot;sol&quot; 15 5)) #true)
+(check-expect (yemi-yedi-mi? (yılan-oluştur (cons (koor-oluştur 15 5) (cons (koor-oluştur 5 5) empty)) &quot;sağ&quot; 5 5)) #false)
+
+(define yemi-yedi-mi?
+  (lambda (yln)
+    (cond
+      [(empty? (yılan-gövde yln)) #false]
+      [(and (= (koor-x (first (yılan-gövde yln))) (yem-x yln)) (= (koor-y (first (yılan-gövde yln))) (yem-y yln))) #true]
+      [else #false])))
+</code></pre>
+<pre><code>;; Bir yılan alır, yılan yemi yedi ise yılanı uzatır ve ilerletir, eger yemedi ise sadece ilerletir.
+(: kontrol-et-ilerle (yılan -&gt; yılan))
+
+(check-expect (kontrol-et-ilerle (yılan-oluştur empty &quot;sağ&quot; 10 20)) (yılan-oluştur empty &quot;sağ&quot; 10 20))
+(check-expect (kontrol-et-ilerle (yılan-oluştur (cons (koor-oluştur 15 5) (cons (koor-oluştur 5 5) empty)) &quot;sağ&quot; 100 200)) (yılan-oluştur (cons (koor-oluştur 25 5) (cons (koor-oluştur 15 5) empty)) &quot;sağ&quot; 100 200))
+;;(check-expect (kontrol-et-ilerle (yılan-oluştur (cons (koor-oluştur 15 5) (cons (koor-oluştur 5 5) empty)) &quot;sağ&quot; 15 5)) (yılan-oluştur (cons (koor-oluştur 25 5) (cons (koor-oluştur 15 5) (cons (koor-oluştur 5 5) empty))) &quot;sağ&quot; 195 195))
+
+(define kontrol-et-ilerle
+  (lambda (yln)
+    (cond
+      [(yemi-yedi-mi? yln) (yılanı-uzat (ilerle yln) (yılan-kuyruk yln))]
+      [else (ilerle yln)])))
+</code></pre>
+<pre><code>;; Bir yılan alır ve kuyruk kısmına bir kare daha ekler.
+
+(: yılanı-uzat (yılan koor -&gt; yılan))
+
+;;(check-expect (yılanı-uzat (yılan-oluştur empty &quot;sağ&quot; 10 20) (koor-oluştur 15 5)) (yılan-oluştur (cons (koor-oluştur 15 5) empty) &quot;sağ&quot; 195 195))
+;;(check-expect (yılanı-uzat (yılan-oluştur (cons (koor-oluştur 15 5) empty) &quot;sol&quot; 100 200) (koor-oluştur 5 5)) (yılan-oluştur (cons (koor-oluştur 15 5) (cons (koor-oluştur 5 5) empty)) &quot;sol&quot; 195 195)) 
+
+(define yılanı-uzat
+  (lambda (yln kuyruk)
+    (yılan-oluştur (append (yılan-gövde yln) (cons kuyruk empty)) (yılan-yön yln) (+ 5 (* (random 20) 10)) (+ 5 (* (random 20) 10)))))
+</code></pre>
+<pre><code>;; Bir yılan alır ve kuyrugunun koordinatını döner
+
+(: yılan-kuyruk (yılan -&gt; koor))
+
+(check-expect (yılan-kuyruk (yılan-oluştur empty &quot;sağ&quot; 10 20)) (koor-oluştur 5 5))
+(check-expect (yılan-kuyruk (yılan-oluştur (cons (koor-oluştur 15 5) empty) &quot;sağ&quot; 10 20)) (koor-oluştur 15 5))
+(check-expect (yılan-kuyruk (yılan-oluştur (cons (koor-oluştur 15 5) (cons (koor-oluştur 5 5) empty)) &quot;sağ&quot; 15 5)) (koor-oluştur 5 5))
+
+(define yılan-kuyruk
+  (lambda (yln)
+    (cond
+      ((empty? (yılan-gövde yln)) (koor-oluştur 5 5))
+      (else (first (reverse (yılan-gövde yln)))))))
+</code></pre>
+<pre><code>;; Yılanı (50,100) noktasından yönü sağ tarafa doğru olacak sekilde yerleştirerek simulasyonu başlatır.
+
+(big-bang
+    (yılan-oluştur (cons (koor-oluştur 15 5) (cons (koor-oluştur 5 5) empty)) &quot;sağ&quot; rastgele rastgele)
+  (on-key yön-değiştir)
+  (on-tick kontrol-et-ilerle 0.1)
+  (stop-when oyun-bitti? son-sahne)
+  (to-draw çiz 200 200))
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ev-Ödevi-11"><a class="header" href="#ev-Ödevi-11">Ev Ödevi</a></h1>
+<p>TODO</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="dokümantasyon"><a class="header" href="#dokümantasyon">Dokümantasyon</a></h1>
+<h2 id="circle"><a class="header" href="#circle">circle</a></h2>
+<pre><code class="language-racket">(circle yarıçap mod renk) → image?
+  yarıçap : (and/c real? (not/c negatıve?))
+  mod : mode?
+  renk : image-color?
+</code></pre>
+<p>Verilen yarıçap, mod ve renk argümanlarını kullanarak bir daire oluşturur.</p>
+<p>Mod, <code>solid</code> ya da <code>outline</code> değerlerinden biri olabilir.</p>
+<p>Renk isimleri için büyük/küçük harf farketmez. &quot;black&quot; ve &quot;Black&quot; aynı renktir. Ayrıca boşluk karakteri de önemsenmez. Yani &quot;light red&quot; ve &quot;lightred&quot; aynı renktir. Kullanabileceğiniz tüm renklerin listesi için <a href="https://docs.racket-lang.org/draw/color-database___.html">buraya</a> bakabilirsiniz.</p>
+<h2 id="rectangle"><a class="header" href="#rectangle">rectangle</a></h2>
+<pre><code class="language-racket">(rectangle genişlik yükseklik mod renk) → image?
+  genişlik : (and/c real? (not/c negatıve?))
+  yükseklik : (and/c real? (not/c negatıve?))
+  mod : mode?
+  renk : image-color?
+</code></pre>
+<p>Verilen genişlik, yükseklik, mod ve renk değerlerini kullanarak bir dikdörtgen oluşturur.</p>
+<h2 id="star"><a class="header" href="#star">star</a></h2>
+<pre><code class="language-racket">(star kenar-uzunluğu mod renk) → image?
+  kenar-uzunluğu : (and/c real? (not/c negatıve?))
+  mod : mode?
+  renk : image-color?
+</code></pre>
+<p>Beş noktalı bir yıldız oluşturur. Kenar uzunluğu argümanı, çevreleyen beşgenin kenar uzunluğunu belirler.</p>
+<h2 id="above"><a class="header" href="#above">above</a></h2>
+<pre><code class="language-racket">(above i1 i2 is ...) → image?
+  i1 : image?
+  i2 : image?
+  is : image?
+</code></pre>
+<p>Verilen tüm resimleri merkezleri boyunca hizalanmış dikey bir sıraya yerleştirerek yeni bir resim oluşturur.</p>
+<h2 id="overlay"><a class="header" href="#overlay">overlay</a></h2>
+<pre><code class="language-racket">(overlay i1 i2 is ...) → image?
+  i1 : image?
+  i2 : image?
+  is : image?
+</code></pre>
+<p>Verilen tüm resimleri üst üste koyarak tek bir resim oluşturur. Birinci resim ikincinin üzerine, o da üçüncünün üzerine ... şeklinde devam eder. Tüm resimler orta noktalarından sabitlenir.</p>
+<h2 id="overlayxy"><a class="header" href="#overlayxy">overlay/xy</a></h2>
+<pre><code class="language-racket">overlay/xy i1 x y i2) → image?
+  i1 : image?
+  x : real?
+  y : real?
+  ı2 : image?
+</code></pre>
+<p>i1'i i2'nin üstüne yerleştirerek bir <code>image</code> oluşturur. Görüntüler başlangıçta sol üst köşelerinden sabitlenir ve ardından i2, x piksel sağa ve y piksel aşağı kaydırılır.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="İletişim"><a class="header" href="#İletişim">İletişim</a></h1>
+<p><code>Yazılım Atölyesi</code> ile ilgili herhangi bir sorunuz olduğunda <code>fatihkoksal@gmail.com</code> adresi üzerinden iletişime geçebilirsiniz.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+    </body>
+</html>
